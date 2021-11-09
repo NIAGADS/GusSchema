@@ -3,7 +3,7 @@
   <schemas>
     <schema name="Core">
       <tables>
-        <table id="Core/Algorithm" name="Algorithm" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Algorithm" updatable="true">
+        <table id="Core/Algorithm" name="Algorithm" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Algorithm" updatable="true">
           <columns>
             <column id="Core/Algorithm/ALGORITHM_ID" name="ALGORITHM_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="Core/Algorithm/NAME" name="NAME" nullable="false" length="100" precision="0" type="STRING"/>
@@ -24,7 +24,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/AlgorithmImplementation" name="AlgorithmImplementation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Algorithm" updatable="true">
+        <table id="Core/AlgorithmImplementation" name="AlgorithmImplementation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Algorithm" updatable="true">
           <columns>
             <column id="Core/AlgorithmImplementation/ALGORITHM_IMPLEMENTATION_ID" name="ALGORITHM_IMPLEMENTATION_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="Core/AlgorithmImplementation/ALGORITHM_ID" name="ALGORITHM_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -64,7 +64,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/AlgorithmInvocation" name="AlgorithmInvocation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Algorithm" updatable="true">
+        <table id="Core/AlgorithmInvocation" name="AlgorithmInvocation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Algorithm" updatable="true">
           <columns>
             <column id="Core/AlgorithmInvocation/ALGORITHM_INVOCATION_ID" name="ALGORITHM_INVOCATION_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="Core/AlgorithmInvocation/ALGORITHM_IMPLEMENTATION_ID" name="ALGORITHM_IMPLEMENTATION_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -104,7 +104,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/AlgorithmParam" name="AlgorithmParam" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Algorithm" updatable="true">
+        <table id="Core/AlgorithmParam" name="AlgorithmParam" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Algorithm" updatable="true">
           <columns>
             <column id="Core/AlgorithmParam/ALGORITHM_PARAM_ID" name="ALGORITHM_PARAM_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="Core/AlgorithmParam/ALGORITHM_PARAM_KEY_ID" name="ALGORITHM_PARAM_KEY_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -163,7 +163,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/AlgorithmParamKey" name="AlgorithmParamKey" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Algorithm" updatable="true">
+        <table id="Core/AlgorithmParamKey" name="AlgorithmParamKey" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Algorithm" updatable="true">
           <columns>
             <column id="Core/AlgorithmParamKey/ALGORITHM_PARAM_KEY_ID" name="ALGORITHM_PARAM_KEY_ID" nullable="false" length="8" precision="0" type="NUMBER"/>
             <column id="Core/AlgorithmParamKey/ALGORITHM_IMPLEMENTATION_ID" name="ALGORITHM_IMPLEMENTATION_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -216,7 +216,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/AlgorithmParamKeyType" name="AlgorithmParamKeyType" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Algorithm" updatable="true">
+        <table id="Core/AlgorithmParamKeyType" name="AlgorithmParamKeyType" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Algorithm" updatable="true">
           <columns>
             <column id="Core/AlgorithmParamKeyType/ALGORITHM_PARAM_KEY_TYPE_ID" name="ALGORITHM_PARAM_KEY_TYPE_ID" nullable="false" length="3" precision="0" type="NUMBER"/>
             <column id="Core/AlgorithmParamKeyType/TYPE" name="TYPE" nullable="false" length="15" precision="0" type="STRING"/>
@@ -236,7 +236,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/AnalysisAlgorithm" name="AnalysisAlgorithm" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="Core/AnalysisAlgorithm" name="AnalysisAlgorithm" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="Core/AnalysisAlgorithm/ANALYSIS_ALGORITHM_ID" name="ANALYSIS_ALGORITHM_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="Core/AnalysisAlgorithm/TABLE_ID" name="TABLE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -288,7 +288,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/Category" name="Category" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="Core/Category" name="Category" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="Core/Category/CATEGORY_ID" name="CATEGORY_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="Core/Category/NAME" name="NAME" nullable="false" length="100" precision="0" type="STRING"/>
@@ -309,7 +309,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/DatabaseDocumentation" name="DatabaseDocumentation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Meta Info" updatable="true">
+        <table id="Core/DatabaseDocumentation" name="DatabaseDocumentation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Meta Info" updatable="true">
           <columns>
             <column id="Core/DatabaseDocumentation/DATABASE_DOCUMENTATION_ID" name="DATABASE_DOCUMENTATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="Core/DatabaseDocumentation/TABLE_ID" name="TABLE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -345,7 +345,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/DatabaseInfo" name="DatabaseInfo" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Meta Info" updatable="true">
+        <table id="Core/DatabaseInfo" name="DatabaseInfo" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Meta Info" updatable="true">
           <columns>
             <column id="Core/DatabaseInfo/DATABASE_ID" name="DATABASE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="Core/DatabaseInfo/NAME" name="NAME" nullable="true" length="60" precision="0" type="STRING"/>
@@ -366,7 +366,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/DatabaseVersion" name="DatabaseVersion" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="Core/DatabaseVersion" name="DatabaseVersion" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="Core/DatabaseVersion/DATABASE_VERSION_ID" name="DATABASE_VERSION_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="Core/DatabaseVersion/VERSION" name="VERSION" nullable="false" length="12" precision="0" type="FLOAT"/>
@@ -386,7 +386,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/GroupInfo" name="GroupInfo" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Administration" updatable="true">
+        <table id="Core/GroupInfo" name="GroupInfo" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Administration" updatable="true">
           <columns>
             <column id="Core/GroupInfo/GROUP_ID" name="GROUP_ID" nullable="false" length="4" precision="0" type="NUMBER"/>
             <column id="Core/GroupInfo/NAME" name="NAME" nullable="false" length="30" precision="0" type="STRING"/>
@@ -407,7 +407,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/ProjectInfo" name="ProjectInfo" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Administration" updatable="true">
+        <table id="Core/ProjectInfo" name="ProjectInfo" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Administration" updatable="true">
           <columns>
             <column id="Core/ProjectInfo/PROJECT_ID" name="PROJECT_ID" nullable="false" length="4" precision="0" type="NUMBER"/>
             <column id="Core/ProjectInfo/NAME" name="NAME" nullable="false" length="40" precision="0" type="STRING"/>
@@ -429,7 +429,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/TableCategory" name="TableCategory" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Meta Info" updatable="true">
+        <table id="Core/TableCategory" name="TableCategory" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Meta Info" updatable="true">
           <columns>
             <column id="Core/TableCategory/TABLE_CATEGORY_ID" name="TABLE_CATEGORY_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="Core/TableCategory/CATEGORY_ID" name="CATEGORY_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -478,7 +478,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/TableInfo" name="TableInfo" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Meta Info" updatable="true">
+        <table id="Core/TableInfo" name="TableInfo" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Meta Info" updatable="true">
           <columns>
             <column id="Core/TableInfo/TABLE_ID" name="TABLE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="Core/TableInfo/NAME" name="NAME" nullable="false" length="30" precision="0" type="STRING"/>
@@ -548,7 +548,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/UserGroup" name="UserGroup" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Administration" updatable="true">
+        <table id="Core/UserGroup" name="UserGroup" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Administration" updatable="true">
           <columns>
             <column id="Core/UserGroup/USER_GROUP_ID" name="USER_GROUP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="Core/UserGroup/USER_ID" name="USER_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
@@ -604,7 +604,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/UserInfo" name="UserInfo" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Administration" updatable="true">
+        <table id="Core/UserInfo" name="UserInfo" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Administration" updatable="true">
           <columns>
             <column id="Core/UserInfo/USER_ID" name="USER_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="Core/UserInfo/LOGIN" name="LOGIN" nullable="false" length="30" precision="0" type="STRING"/>
@@ -643,7 +643,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="Core/UserProject" name="UserProject" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Administration" updatable="true">
+        <table id="Core/UserProject" name="UserProject" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Administration" updatable="true">
           <columns>
             <column id="Core/UserProject/USER_PROJECT_ID" name="USER_PROJECT_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="Core/UserProject/USER_ID" name="USER_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
@@ -703,7 +703,7 @@
     </schema>
     <schema name="DoTS">
       <tables>
-        <table id="DoTS/AAComment" name="AAComment" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/AAComment" name="AAComment" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/AAComment/AA_COMMENT_ID" name="AA_COMMENT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AAComment/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -753,7 +753,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AAEntry" name="AAEntry" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/AAEntry" name="AAEntry" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/AAEntry/AA_ENTRY_ID" name="AA_ENTRY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AAEntry/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -805,7 +805,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AAFamilyExperiment" name="AAFamilyExperiment" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+        <table id="DoTS/AAFamilyExperiment" name="AAFamilyExperiment" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
           <columns>
             <column id="DoTS/AAFamilyExperiment/AA_FAMILY_EXPERIMENT_ID" name="AA_FAMILY_EXPERIMENT_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/AAFamilyExperiment/DESCRIPTION" name="DESCRIPTION" nullable="true" length="2000" precision="0" type="STRING"/>
@@ -855,7 +855,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AAFeature" name="AAFeature" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+        <table id="DoTS/AAFeature" name="AAFeature" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
           <columns>
             <column id="DoTS/AAFeature/AA_FEATURE_ID" name="AA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AAFeature/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -875,7 +875,7 @@
             <column id="DoTS/AAFeature/REVIEW_STATUS_ID" name="REVIEW_STATUS_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
           </columns>
           <subclasses>
-            <subclass id="DoTS/AAFeature/AASeqVariation" name="AASeqVariation" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/AASeqVariation" name="AASeqVariation" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/AASeqVariation/IS_SYNONYMOUS" name="IS_SYNONYMOUS" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/AASeqVariation/IS_STOP" name="IS_STOP" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -888,7 +888,7 @@
                 <column id="DoTS/AASeqVariation/NA_SUBSTITUTE" name="NA_SUBSTITUTE" nullable="true" length="3" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AAFeature/DomainFeature" name="DomainFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/DomainFeature" name="DomainFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/DomainFeature/NAME" name="NAME" nullable="true" length="40" precision="0" type="STRING"/>
                 <column id="DoTS/DomainFeature/ALGORITHM_NAME" name="ALGORITHM_NAME" nullable="true" length="40" precision="0" type="STRING"/>
@@ -898,7 +898,7 @@
                 <column id="DoTS/DomainFeature/NUMBER_OF_DOMAINS" name="NUMBER_OF_DOMAINS" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AAFeature/EpitopeFeature" name="EpitopeFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/EpitopeFeature" name="EpitopeFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/EpitopeFeature/HAPLOTYPE" name="HAPLOTYPE" nullable="true" length="40" precision="0" type="STRING"/>
                 <column id="DoTS/EpitopeFeature/TYPE" name="TYPE" nullable="true" length="80" precision="0" type="STRING"/>
@@ -907,28 +907,28 @@
                 <column id="DoTS/EpitopeFeature/WIDTH" name="WIDTH" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AAFeature/LowComplexityAAFeature" name="LowComplexityAAFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/LowComplexityAAFeature" name="LowComplexityAAFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
             </subclass>
-            <subclass id="DoTS/AAFeature/MassSpecFeature" name="MassSpecFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/MassSpecFeature" name="MassSpecFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/MassSpecFeature/DEVELOPMENTAL_STAGE" name="DEVELOPMENTAL_STAGE" nullable="true" length="40" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AAFeature/PlasmoAPFeature" name="PlasmoAPFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/PlasmoAPFeature" name="PlasmoAPFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
             </subclass>
-            <subclass id="DoTS/AAFeature/PostTranslationalModFeature" name="PostTranslationalModFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/PostTranslationalModFeature" name="PostTranslationalModFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/PostTranslationalModFeature/NAME" name="NAME" nullable="true" length="400" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AAFeature/PredictedAAFeature" name="PredictedAAFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/PredictedAAFeature" name="PredictedAAFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/PredictedAAFeature/NAME" name="NAME" nullable="true" length="60" precision="0" type="STRING"/>
                 <column id="DoTS/PredictedAAFeature/ALGORITHM_NAME" name="ALGORITHM_NAME" nullable="true" length="100" precision="0" type="STRING"/>
                 <column id="DoTS/PredictedAAFeature/SCORE" name="SCORE" nullable="true" length="126" precision="0" type="FLOAT"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AAFeature/RepeatRegionAAFeature" name="RepeatRegionAAFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/RepeatRegionAAFeature" name="RepeatRegionAAFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/RepeatRegionAAFeature/PERIOD" name="PERIOD" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/RepeatRegionAAFeature/COPYNUM" name="COPYNUM" nullable="true" length="126" precision="0" type="FLOAT"/>
@@ -940,13 +940,13 @@
                 <column id="DoTS/RepeatRegionAAFeature/ALGORITHM_NAME" name="ALGORITHM_NAME" nullable="true" length="100" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AAFeature/SecondaryStructureAAFeature" name="SecondaryStructureAAFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/SecondaryStructureAAFeature" name="SecondaryStructureAAFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/SecondaryStructureAAFeature/NAME" name="NAME" nullable="true" length="200" precision="0" type="STRING"/>
                 <column id="DoTS/SecondaryStructureAAFeature/SCORE" name="SCORE" nullable="true" length="126" precision="0" type="FLOAT"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AAFeature/SignalPeptideFeature" name="SignalPeptideFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/SignalPeptideFeature" name="SignalPeptideFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/SignalPeptideFeature/NAME" name="NAME" nullable="true" length="100" precision="0" type="STRING"/>
                 <column id="DoTS/SignalPeptideFeature/ALGORITHM_NAME" name="ALGORITHM_NAME" nullable="true" length="100" precision="0" type="STRING"/>
@@ -963,13 +963,13 @@
                 <column id="DoTS/SignalPeptideFeature/ANCHOR_PROBABILITY" name="ANCHOR_PROBABILITY" nullable="true" length="126" precision="0" type="FLOAT"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AAFeature/TertiaryStructureAAFeature" name="TertiaryStructureAAFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/TertiaryStructureAAFeature" name="TertiaryStructureAAFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/TertiaryStructureAAFeature/NAME" name="NAME" nullable="true" length="100" precision="0" type="STRING"/>
                 <column id="DoTS/TertiaryStructureAAFeature/SCORE" name="SCORE" nullable="true" length="126" precision="0" type="FLOAT"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AAFeature/TranslatedAAFeature" name="TranslatedAAFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/TranslatedAAFeature" name="TranslatedAAFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/TranslatedAAFeature/TRANSLATION_START" name="TRANSLATION_START" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/TranslatedAAFeature/TRANSLATION_STOP" name="TRANSLATION_STOP" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -985,7 +985,7 @@
                 <column id="DoTS/TranslatedAAFeature/IS_REVERSED" name="IS_REVERSED" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AAFeature/TransMembraneAAFeature" name="TransMembraneAAFeature" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+            <subclass id="DoTS/AAFeature/TransMembraneAAFeature" name="TransMembraneAAFeature" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/TransMembraneAAFeature/LENGTH" name="LENGTH" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/TransMembraneAAFeature/EXPECTED_AA" name="EXPECTED_AA" nullable="true" length="80" precision="0" type="STRING"/>
@@ -1295,7 +1295,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AAGene" name="AAGene" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/AAGene" name="AAGene" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/AAGene/AA_GENE_ID" name="AA_GENE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AAGene/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -1331,7 +1331,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AAGeneSynonym" name="AAGeneSynonym" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/AAGeneSynonym" name="AAGeneSynonym" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/AAGeneSynonym/AA_GENE_SYNONYM_ID" name="AA_GENE_SYNONYM_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AAGeneSynonym/AA_GENE_ID" name="AA_GENE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -1366,7 +1366,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AALocation" name="AALocation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/AALocation" name="AALocation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/AALocation/AA_LOCATION_ID" name="AA_LOCATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AALocation/AA_FEATURE_ID" name="AA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -1404,7 +1404,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AAMotifGOTermRule" name="AAMotifGOTermRule" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Misc Applications" updatable="true">
+        <table id="DoTS/AAMotifGOTermRule" name="AAMotifGOTermRule" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Misc Applications" updatable="true">
           <columns>
             <column id="DoTS/AAMotifGOTermRule/AA_MOTIF_GO_TERM_RULE_ID" name="AA_MOTIF_GO_TERM_RULE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AAMotifGOTermRule/AA_MOTIF_GO_TERM_RULE_SET_ID" name="AA_MOTIF_GO_TERM_RULE_SET_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -1498,7 +1498,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AAMotifGOTermRuleSet" name="AAMotifGOTermRuleSet" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/AAMotifGOTermRuleSet" name="AAMotifGOTermRuleSet" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/AAMotifGOTermRuleSet/AA_MOTIF_GO_TERM_RULE_SET_ID" name="AA_MOTIF_GO_TERM_RULE_SET_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AAMotifGOTermRuleSet/AA_SEQUENCE_ID_1" name="AA_SEQUENCE_ID_1" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -1582,7 +1582,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASeqGroupExperiment" name="AASeqGroupExperiment" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
+        <table id="DoTS/AASeqGroupExperiment" name="AASeqGroupExperiment" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
           <columns>
             <column id="DoTS/AASeqGroupExperiment/AA_SEQ_GROUP_EXPERIMENT_ID" name="AA_SEQ_GROUP_EXPERIMENT_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/AASeqGroupExperiment/SUBCLASS_VIEW" name="SUBCLASS_VIEW" nullable="false" length="30" precision="0" type="STRING"/>
@@ -1594,9 +1594,9 @@
             <column id="DoTS/AASeqGroupExperiment/PERCENT_MATCH" name="PERCENT_MATCH" nullable="true" length="126" precision="0" type="FLOAT"/>
           </columns>
           <subclasses>
-            <subclass id="DoTS/AASeqGroupExperiment/AAOrthologExperiment" name="AAOrthologExperiment" versioned="true" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
+            <subclass id="DoTS/AASeqGroupExperiment/AAOrthologExperiment" name="AAOrthologExperiment" versioned="false" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
             </subclass>
-            <subclass id="DoTS/AASeqGroupExperiment/AAParalogExperiment" name="AAParalogExperiment" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+            <subclass id="DoTS/AASeqGroupExperiment/AAParalogExperiment" name="AAParalogExperiment" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
             </subclass>
           </subclasses>
           <indexes>
@@ -1614,7 +1614,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASequence" name="AASequence" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
+        <table id="DoTS/AASequence" name="AASequence" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
           <columns>
             <column id="DoTS/AASequence/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AASequence/SEQUENCE_VERSION" name="SEQUENCE_VERSION" nullable="true" length="3" precision="0" type="NUMBER"/>
@@ -1631,7 +1631,7 @@
             <column id="DoTS/AASequence/TAXON_ID" name="TAXON_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
           </columns>
           <subclasses>
-            <subclass id="DoTS/AASequence/ExternalAASequence" name="ExternalAASequence" versioned="true" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
+            <subclass id="DoTS/AASequence/ExternalAASequence" name="ExternalAASequence" versioned="false" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
               <columns>
                 <column id="DoTS/ExternalAASequence/SECONDARY_IDENTIFIER" name="SECONDARY_IDENTIFIER" nullable="true" length="255" precision="0" type="STRING"/>
                 <column id="DoTS/ExternalAASequence/NAME" name="NAME" nullable="true" length="255" precision="0" type="STRING"/>
@@ -1639,7 +1639,7 @@
                 <column id="DoTS/ExternalAASequence/CRC32_VALUE" name="CRC32_VALUE" nullable="true" length="255" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AASequence/MotifAASequence" name="MotifAASequence" versioned="true" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
+            <subclass id="DoTS/AASequence/MotifAASequence" name="MotifAASequence" versioned="false" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
               <columns>
                 <column id="DoTS/MotifAASequence/NUMBER_OF_CONTAINED_SEQUENCES" name="NUMBER_OF_CONTAINED_SEQUENCES" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/MotifAASequence/SECONDARY_IDENTIFIER" name="SECONDARY_IDENTIFIER" nullable="true" length="255" precision="0" type="STRING"/>
@@ -1648,14 +1648,14 @@
                 <column id="DoTS/MotifAASequence/CRC32_VALUE" name="CRC32_VALUE" nullable="true" length="255" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AASequence/TranslatedAASequence" name="TranslatedAASequence" versioned="true" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
+            <subclass id="DoTS/AASequence/TranslatedAASequence" name="TranslatedAASequence" versioned="false" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
               <columns>
                 <column id="DoTS/TranslatedAASequence/NOTES" name="NOTES" nullable="true" length="255" precision="0" type="STRING"/>
                 <column id="DoTS/TranslatedAASequence/IS_SIMPLE" name="IS_SIMPLE" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/TranslatedAASequence/SECONDARY_IDENTIFIER" name="SECONDARY_IDENTIFIER" nullable="true" length="255" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/AASequence/TrivialTranslation" name="TrivialTranslation" versioned="true" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
+            <subclass id="DoTS/AASequence/TrivialTranslation" name="TrivialTranslation" versioned="false" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
               <columns>
                 <column id="DoTS/TrivialTranslation/READING_FRAME" name="READING_FRAME" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/TrivialTranslation/CODON_TABLE" name="CODON_TABLE" nullable="true" length="255" precision="0" type="STRING"/>
@@ -1776,7 +1776,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASequenceDbRef" name="AASequenceDbRef" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/AASequenceDbRef" name="AASequenceDbRef" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/AASequenceDbRef/AA_SEQUENCE_DB_REF_ID" name="AA_SEQUENCE_DB_REF_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AASequenceDbRef/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -1825,7 +1825,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASequenceEnzymeClass" name="AASequenceEnzymeClass" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Enzymes Vocabulary" updatable="true">
+        <table id="DoTS/AASequenceEnzymeClass" name="AASequenceEnzymeClass" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Enzymes Vocabulary" updatable="true">
           <columns>
             <column id="DoTS/AASequenceEnzymeClass/AA_SEQUENCE_ENZYME_CLASS_ID" name="AA_SEQUENCE_ENZYME_CLASS_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/AASequenceEnzymeClass/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -1914,7 +1914,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASequenceFamily" name="AASequenceFamily" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+        <table id="DoTS/AASequenceFamily" name="AASequenceFamily" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
           <columns>
             <column id="DoTS/AASequenceFamily/AA_SEQUENCE_FAMILY_ID" name="AA_SEQUENCE_FAMILY_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/AASequenceFamily/NAME" name="NAME" nullable="false" length="500" precision="0" type="STRING"/>
@@ -1950,7 +1950,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASequenceGroup" name="AASequenceGroup" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
+        <table id="DoTS/AASequenceGroup" name="AASequenceGroup" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
           <columns>
             <column id="DoTS/AASequenceGroup/AA_SEQUENCE_GROUP_ID" name="AA_SEQUENCE_GROUP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/AASequenceGroup/SUBCLASS_VIEW" name="SUBCLASS_VIEW" nullable="false" length="30" precision="0" type="STRING"/>
@@ -1970,9 +1970,9 @@
             <column id="DoTS/AASequenceGroup/AA_SEQ_GROUP_EXPERIMENT_ID" name="AA_SEQ_GROUP_EXPERIMENT_ID" nullable="true" length="12" precision="0" type="NUMBER"/>
           </columns>
           <subclasses>
-            <subclass id="DoTS/AASequenceGroup/AAOrthologGroup" name="AAOrthologGroup" versioned="true" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
+            <subclass id="DoTS/AASequenceGroup/AAOrthologGroup" name="AAOrthologGroup" versioned="false" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
             </subclass>
-            <subclass id="DoTS/AASequenceGroup/AAParalogGroup" name="AAParalogGroup" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+            <subclass id="DoTS/AASequenceGroup/AAParalogGroup" name="AAParalogGroup" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
             </subclass>
           </subclasses>
           <indexes>
@@ -2004,7 +2004,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASequenceGroupFamily" name="AASequenceGroupFamily" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+        <table id="DoTS/AASequenceGroupFamily" name="AASequenceGroupFamily" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
           <columns>
             <column id="DoTS/AASequenceGroupFamily/AA_SEQUENCE_GROUP_FAMILY_ID" name="AA_SEQUENCE_GROUP_FAMILY_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/AASequenceGroupFamily/AA_SEQUENCE_FAMILY_ID" name="AA_SEQUENCE_FAMILY_ID" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -2053,7 +2053,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASequenceKeyword" name="AASequenceKeyword" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/AASequenceKeyword" name="AASequenceKeyword" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/AASequenceKeyword/AA_SEQUENCE_KEYWORD_ID" name="AA_SEQUENCE_KEYWORD_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AASequenceKeyword/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2102,7 +2102,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASequenceOrganelle" name="AASequenceOrganelle" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/AASequenceOrganelle" name="AASequenceOrganelle" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/AASequenceOrganelle/AA_SEQUENCE_ORGANELLE_ID" name="AA_SEQUENCE_ORGANELLE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AASequenceOrganelle/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2151,7 +2151,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASequenceRef" name="AASequenceRef" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/AASequenceRef" name="AASequenceRef" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/AASequenceRef/AA_SEQUENCE_REF_ID" name="AA_SEQUENCE_REF_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AASequenceRef/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2200,7 +2200,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASequenceSequenceGroup" name="AASequenceSequenceGroup" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
+        <table id="DoTS/AASequenceSequenceGroup" name="AASequenceSequenceGroup" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
           <columns>
             <column id="DoTS/AASequenceSequenceGroup/AA_SEQUENCE_SEQUENCE_GROUP_ID" name="AA_SEQUENCE_SEQUENCE_GROUP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/AASequenceSequenceGroup/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2249,7 +2249,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AASequenceTaxon" name="AASequenceTaxon" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/AASequenceTaxon" name="AASequenceTaxon" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/AASequenceTaxon/AA_SEQUENCE_TAXON_ID" name="AA_SEQUENCE_TAXON_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AASequenceTaxon/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2298,7 +2298,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Allele" name="Allele" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Variation" updatable="true">
+        <table id="DoTS/Allele" name="Allele" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Variation" updatable="true">
           <columns>
             <column id="DoTS/Allele/ALLELE_ID" name="ALLELE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Allele/NAME" name="NAME" nullable="false" length="100" precision="0" type="STRING"/>
@@ -2365,7 +2365,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AlleleComplementation" name="AlleleComplementation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Variation" updatable="true">
+        <table id="DoTS/AlleleComplementation" name="AlleleComplementation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Variation" updatable="true">
           <columns>
             <column id="DoTS/AlleleComplementation/ALLELE_COMPLEMENTATION_ID" name="ALLELE_COMPLEMENTATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AlleleComplementation/ALLELE_ID" name="ALLELE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2430,7 +2430,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AlleleInstance" name="AlleleInstance" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Variation" updatable="true">
+        <table id="DoTS/AlleleInstance" name="AlleleInstance" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Variation" updatable="true">
           <columns>
             <column id="DoTS/AlleleInstance/ALLELE_INSTANCE_ID" name="ALLELE_INSTANCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AlleleInstance/ALLELE_ID" name="ALLELE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2495,7 +2495,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AllelePhenotype" name="AllelePhenotype" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Variation" updatable="true">
+        <table id="DoTS/AllelePhenotype" name="AllelePhenotype" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Variation" updatable="true">
           <columns>
             <column id="DoTS/AllelePhenotype/ALLELE_PHENOTYPE_ID" name="ALLELE_PHENOTYPE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AllelePhenotype/ALLELE_ID" name="ALLELE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2559,7 +2559,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AllelePhenotypeClass" name="AllelePhenotypeClass" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Variation" updatable="true">
+        <table id="DoTS/AllelePhenotypeClass" name="AllelePhenotypeClass" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Variation" updatable="true">
           <columns>
             <column id="DoTS/AllelePhenotypeClass/ALLELE_PHENOTYPE_CLASS_ID" name="ALLELE_PHENOTYPE_CLASS_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AllelePhenotypeClass/ALLELE_ID" name="ALLELE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2623,7 +2623,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AnatomyLibrary" name="AnatomyLibrary" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Clones" updatable="true">
+        <table id="DoTS/AnatomyLibrary" name="AnatomyLibrary" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Clones" updatable="true">
           <columns>
             <column id="DoTS/AnatomyLibrary/ANATOMY_LIBRARY_ID" name="ANATOMY_LIBRARY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AnatomyLibrary/ANATOMY_ID" name="ANATOMY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2663,7 +2663,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AnatomyLOE" name="AnatomyLOE" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Clones" updatable="true">
+        <table id="DoTS/AnatomyLOE" name="AnatomyLOE" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Clones" updatable="true">
           <columns>
             <column id="DoTS/AnatomyLOE/ANATOMY_LOE_ID" name="ANATOMY_LOE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="DoTS/AnatomyLOE/NAME" name="NAME" nullable="false" length="255" precision="0" type="STRING"/>
@@ -2684,7 +2684,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AssemblyAnatomyPercent" name="AssemblyAnatomyPercent" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Assembly" updatable="true">
+        <table id="DoTS/AssemblyAnatomyPercent" name="AssemblyAnatomyPercent" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Assembly" updatable="true">
           <columns>
             <column id="DoTS/AssemblyAnatomyPercent/ASSEMBLY_ANATOMY_PERCENT_ID" name="ASSEMBLY_ANATOMY_PERCENT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AssemblyAnatomyPercent/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2755,7 +2755,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AssemblySequence" name="AssemblySequence" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Assembly" updatable="true">
+        <table id="DoTS/AssemblySequence" name="AssemblySequence" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Assembly" updatable="true">
           <columns>
             <column id="DoTS/AssemblySequence/ASSEMBLY_SEQUENCE_ID" name="ASSEMBLY_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AssemblySequence/ASSEMBLY_NA_SEQUENCE_ID" name="ASSEMBLY_NA_SEQUENCE_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
@@ -2813,7 +2813,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AssemblySequenceSNP" name="AssemblySequenceSNP" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Assembly" updatable="true">
+        <table id="DoTS/AssemblySequenceSNP" name="AssemblySequenceSNP" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Assembly" updatable="true">
           <columns>
             <column id="DoTS/AssemblySequenceSNP/ASSEMBLY_SEQUENCE_SNP_ID" name="ASSEMBLY_SEQUENCE_SNP_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AssemblySequenceSNP/ASSEMBLY_SEQUENCE_ID" name="ASSEMBLY_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2865,7 +2865,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AssemblySNP" name="AssemblySNP" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Assembly" updatable="true">
+        <table id="DoTS/AssemblySNP" name="AssemblySNP" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Assembly" updatable="true">
           <columns>
             <column id="DoTS/AssemblySNP/ASSEMBLY_SNP_ID" name="ASSEMBLY_SNP_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AssemblySNP/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -2917,7 +2917,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Attribution" name="Attribution" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Bibliographic" updatable="true">
+        <table id="DoTS/Attribution" name="Attribution" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Bibliographic" updatable="true">
           <columns>
             <column id="DoTS/Attribution/ATTRIBUTION_ID" name="ATTRIBUTION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Attribution/TABLE_ID" name="TABLE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -2967,7 +2967,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/BestSimilarityPair" name="BestSimilarityPair" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
+        <table id="DoTS/BestSimilarityPair" name="BestSimilarityPair" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="AA Ortholog" updatable="true">
           <columns>
             <column id="DoTS/BestSimilarityPair/BEST_SIMILARITY_PAIR_ID" name="BEST_SIMILARITY_PAIR_ID" nullable="false" length="0" precision="0" type="NUMBER"/>
             <column id="DoTS/BestSimilarityPair/SEQUENCE_ID" name="SEQUENCE_ID" nullable="false" length="0" precision="0" type="NUMBER"/>
@@ -3259,7 +3259,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Clone" name="Clone" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Clones" updatable="true">
+        <table id="DoTS/Clone" name="Clone" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Clones" updatable="true">
           <columns>
             <column id="DoTS/Clone/CLONE_ID" name="CLONE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Clone/LIBRARY_ID" name="LIBRARY_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -3327,7 +3327,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/CloneInSet" name="CloneInSet" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Clones" updatable="true">
+        <table id="DoTS/CloneInSet" name="CloneInSet" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Clones" updatable="true">
           <columns>
             <column id="DoTS/CloneInSet/CLONE_IN_SET_ID" name="CLONE_IN_SET_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/CloneInSet/CLONE_ID" name="CLONE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -3377,7 +3377,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/CloneSet" name="CloneSet" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Clones" updatable="true">
+        <table id="DoTS/CloneSet" name="CloneSet" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Clones" updatable="true">
           <columns>
             <column id="DoTS/CloneSet/CLONE_SET_ID" name="CLONE_SET_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/CloneSet/CONTACT_ID" name="CONTACT_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
@@ -3416,7 +3416,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/CommentName" name="CommentName" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/CommentName" name="CommentName" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/CommentName/COMMENT_NAME_ID" name="COMMENT_NAME_ID" nullable="false" length="4" precision="0" type="NUMBER"/>
             <column id="DoTS/CommentName/NAME" name="NAME" nullable="false" length="20" precision="0" type="STRING"/>
@@ -3447,7 +3447,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Comments" name="Comments" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Evidence" updatable="true">
+        <table id="DoTS/Comments" name="Comments" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Evidence" updatable="true">
           <columns>
             <column id="DoTS/Comments/COMMENTS_ID" name="COMMENTS_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Comments/COMMENT_STRING" name="COMMENT_STRING" nullable="false" length="0" precision="0" type="CLOB"/>
@@ -3482,7 +3482,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Complementation" name="Complementation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Variation" updatable="true">
+        <table id="DoTS/Complementation" name="Complementation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Variation" updatable="true">
           <columns>
             <column id="DoTS/Complementation/COMPLEMENTATION_ID" name="COMPLEMENTATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Complementation/IS_EXTERNAL_REFERENCE" name="IS_EXTERNAL_REFERENCE" nullable="false" length="1" precision="0" type="NUMBER"/>
@@ -3564,7 +3564,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Complex" name="Complex" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/Complex" name="Complex" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/Complex/COMPLEX_ID" name="COMPLEX_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Complex/NAME" name="NAME" nullable="true" length="80" precision="0" type="STRING"/>
@@ -3631,7 +3631,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ComplexAnatomy" name="ComplexAnatomy" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/ComplexAnatomy" name="ComplexAnatomy" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/ComplexAnatomy/COMPLEX_ANATOMY_ID" name="COMPLEX_ANATOMY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/ComplexAnatomy/COMPLEX_ID" name="COMPLEX_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -3695,7 +3695,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ComplexComponent" name="ComplexComponent" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/ComplexComponent" name="ComplexComponent" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/ComplexComponent/COMPLEX_COMPONENT_ID" name="COMPLEX_COMPONENT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/ComplexComponent/TABLE_ID" name="TABLE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -3745,7 +3745,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ComplexType" name="ComplexType" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/ComplexType" name="ComplexType" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/ComplexType/COMPLEX_TYPE_ID" name="COMPLEX_TYPE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="DoTS/ComplexType/NAME" name="NAME" nullable="false" length="80" precision="0" type="STRING"/>
@@ -3766,7 +3766,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ConsistentAlignment" name="ConsistentAlignment" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Similarity" updatable="true">
+        <table id="DoTS/ConsistentAlignment" name="ConsistentAlignment" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Similarity" updatable="true">
           <columns>
             <column id="DoTS/ConsistentAlignment/CONSISTENT_ALIGNMENT_ID" name="CONSISTENT_ALIGNMENT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/ConsistentAlignment/SIMILARITY_ID" name="SIMILARITY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -3850,7 +3850,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/DbRefNAFeature" name="DbRefNAFeature" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/DbRefNAFeature" name="DbRefNAFeature" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/DbRefNAFeature/DB_REF_NA_FEATURE_ID" name="DB_REF_NA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/DbRefNAFeature/NA_FEATURE_ID" name="NA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -3900,7 +3900,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/DbRefAAFeature" name="DbRefAAFeature" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/DbRefAAFeature" name="DbRefAAFeature" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/DbRefAAFeature/DB_REF_AA_FEATURE_ID" name="DB_REF_AA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/DbRefAAFeature/AA_FEATURE_ID" name="AA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -3951,7 +3951,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/DbRefNASequence" name="DbRefNASequence" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
+        <table id="DoTS/DbRefNASequence" name="DbRefNASequence" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
           <columns>
             <column id="DoTS/DbRefNASequence/DB_REF_NA_SEQUENCE_ID" name="DB_REF_NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/DbRefNASequence/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -4006,7 +4006,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/DbRefPfamEntry" name="DbRefPfamEntry" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
+        <table id="DoTS/DbRefPfamEntry" name="DbRefPfamEntry" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
           <columns>
             <column id="DoTS/DbRefPfamEntry/DB_REF_PFAM_ENTRY_ID" name="DB_REF_PFAM_ENTRY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/DbRefPfamEntry/PFAM_ENTRY_ID" name="PFAM_ENTRY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -4055,7 +4055,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/DevStageLibrary" name="DevStageLibrary" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Clones" updatable="true">
+        <table id="DoTS/DevStageLibrary" name="DevStageLibrary" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Clones" updatable="true">
           <columns>
             <column id="DoTS/DevStageLibrary/DEV_STAGE_LIBRARY_ID" name="DEV_STAGE_LIBRARY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/DevStageLibrary/DEVELOPMENTAL_STAGE_ID" name="DEVELOPMENTAL_STAGE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -4106,7 +4106,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/EffectorActionType" name="EffectorActionType" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/EffectorActionType" name="EffectorActionType" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/EffectorActionType/EFFECTOR_ACTION_TYPE_ID" name="EFFECTOR_ACTION_TYPE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="DoTS/EffectorActionType/NAME" name="NAME" nullable="false" length="80" precision="0" type="STRING"/>
@@ -4143,7 +4143,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/EndSequencePairMap" name="EndSequencePairMap" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/EndSequencePairMap" name="EndSequencePairMap" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/EndSequencePairMap/END_SEQUENCE_PAIR_MAP_ID" name="END_SEQUENCE_PAIR_MAP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/EndSequencePairMap/EXTERNAL_DATABASE_RELEASE_ID" name="EXTERNAL_DATABASE_RELEASE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -4227,7 +4227,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/EPCR" name="EPCR" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/EPCR" name="EPCR" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/EPCR/EPCR_ID" name="EPCR_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/EPCR/MAP_TABLE_ID" name="MAP_TABLE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -4305,7 +4305,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/EST" name="EST" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Clones" updatable="true">
+        <table id="DoTS/EST" name="EST" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Clones" updatable="true">
           <columns>
             <column id="DoTS/EST/EST_ID" name="EST_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/EST/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -4406,7 +4406,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Evidence" name="Evidence" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Evidence" updatable="true">
+        <table id="DoTS/Evidence" name="Evidence" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Evidence" updatable="true">
           <columns>
             <column id="DoTS/Evidence/EVIDENCE_ID" name="EVIDENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Evidence/TARGET_TABLE_ID" name="TARGET_TABLE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -4480,7 +4480,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ExonLocation" name="ExonLocation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/ExonLocation" name="ExonLocation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/ExonLocation/EXON_LOCATION_ID" name="EXON_LOCATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/ExonLocation/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
@@ -4519,7 +4519,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ExternalDatabaseKeyword" name="ExternalDatabaseKeyword" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/ExternalDatabaseKeyword" name="ExternalDatabaseKeyword" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/ExternalDatabaseKeyword/EXTERNAL_DATABASE_KEYWORD_ID" name="EXTERNAL_DATABASE_KEYWORD_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/ExternalDatabaseKeyword/EXTERNAL_DATABASE_RELEASE_ID" name="EXTERNAL_DATABASE_RELEASE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -4569,7 +4569,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Family" name="Family" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/Family" name="Family" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/Family/FAMILY_ID" name="FAMILY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Family/PARENT_FAMILY_ID" name="PARENT_FAMILY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -4607,7 +4607,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/FamilyGene" name="FamilyGene" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/FamilyGene" name="FamilyGene" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/FamilyGene/FAMILY_GENE_ID" name="FAMILY_GENE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/FamilyGene/FAMILY_ID" name="FAMILY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -4656,7 +4656,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/FamilyProtein" name="FamilyProtein" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/FamilyProtein" name="FamilyProtein" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/FamilyProtein/FAMILY_PROTEIN_ID" name="FAMILY_PROTEIN_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/FamilyProtein/PROTEIN_ID" name="PROTEIN_ID" nullable="false" length="18" precision="0" type="NUMBER"/>
@@ -4705,7 +4705,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/FeatureName" name="FeatureName" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/FeatureName" name="FeatureName" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/FeatureName/FEATURE_NAME_ID" name="FEATURE_NAME_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/FeatureName/NAME" name="NAME" nullable="false" length="30" precision="0" type="STRING"/>
@@ -4726,7 +4726,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/FingerprintClone" name="FingerprintClone" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/FingerprintClone" name="FingerprintClone" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/FingerprintClone/FINGERPRINT_CLONE_ID" name="FINGERPRINT_CLONE_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/FingerprintClone/SOURCE_ID" name="SOURCE_ID" nullable="false" length="30" precision="0" type="STRING"/>
@@ -4768,7 +4768,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/FingerprintCloneContig" name="FingerprintCloneContig" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/FingerprintCloneContig" name="FingerprintCloneContig" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/FingerprintCloneContig/FINGERPRINT_CLONE_CONTIG_ID" name="FINGERPRINT_CLONE_CONTIG_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/FingerprintCloneContig/FINGERPRINT_CLONE_ID" name="FINGERPRINT_CLONE_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
@@ -4820,7 +4820,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/FingerprintCloneMarker" name="FingerprintCloneMarker" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/FingerprintCloneMarker" name="FingerprintCloneMarker" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/FingerprintCloneMarker/FINGERPRINT_CLONE_MARKER_ID" name="FINGERPRINT_CLONE_MARKER_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/FingerprintCloneMarker/FINGERPRINT_MAP_ID" name="FINGERPRINT_MAP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
@@ -4893,7 +4893,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/FingerprintContig" name="FingerprintContig" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/FingerprintContig" name="FingerprintContig" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/FingerprintContig/FINGERPRINT_CONTIG_ID" name="FINGERPRINT_CONTIG_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/FingerprintContig/FINGERPRINT_MAP_ID" name="FINGERPRINT_MAP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
@@ -4935,7 +4935,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/FingerprintMap" name="FingerprintMap" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/FingerprintMap" name="FingerprintMap" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/FingerprintMap/FINGERPRINT_MAP_ID" name="FINGERPRINT_MAP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/FingerprintMap/NAME" name="NAME" nullable="false" length="80" precision="0" type="STRING"/>
@@ -4974,7 +4974,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Gene" name="Gene" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/Gene" name="Gene" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/Gene/GENE_ID" name="GENE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Gene/NAME" name="NAME" nullable="true" length="255" precision="0" type="STRING"/>
@@ -5070,7 +5070,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneCategory" name="GeneCategory" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/GeneCategory" name="GeneCategory" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/GeneCategory/GENE_CATEGORY_ID" name="GENE_CATEGORY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneCategory/TERM" name="TERM" nullable="false" length="80" precision="0" type="STRING"/>
@@ -5091,7 +5091,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneChromosomalLocation" name="GeneChromosomalLocation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/GeneChromosomalLocation" name="GeneChromosomalLocation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/GeneChromosomalLocation/GENE_CHROMOSOMAL_LOCATION_ID" name="GENE_CHROMOSOMAL_LOCATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneChromosomalLocation/GENE_ID" name="GENE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -5128,7 +5128,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneFamily" name="GeneFamily" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/GeneFamily" name="GeneFamily" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/GeneFamily/GENE_FAMILY_ID" name="GENE_FAMILY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneFamily/NAME" name="NAME" nullable="false" length="40" precision="0" type="STRING"/>
@@ -5149,7 +5149,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneFamilyRelation" name="GeneFamilyRelation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/GeneFamilyRelation" name="GeneFamilyRelation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/GeneFamilyRelation/GENE_FAMILY_RELATION_ID" name="GENE_FAMILY_RELATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneFamilyRelation/GENE_FAMILY_ID" name="GENE_FAMILY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -5199,7 +5199,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneFeatureSAGETagLink" name="GeneFeatureSAGETagLink" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/GeneFeatureSAGETagLink" name="GeneFeatureSAGETagLink" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/GeneFeatureSAGETagLink/GENE_FEATURE_SAGE_TAG_LINK_ID" name="GENE_FEATURE_SAGE_TAG_LINK_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneFeatureSAGETagLink/GENOMIC_NA_SEQUENCE_ID" name="GENOMIC_NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -5275,7 +5275,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneFeatureSeqOverlap" name="GeneFeatureSeqOverlap" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Misc Applications" updatable="true">
+        <table id="DoTS/GeneFeatureSeqOverlap" name="GeneFeatureSeqOverlap" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Misc Applications" updatable="true">
           <columns>
             <column id="DoTS/GeneFeatureSeqOverlap/GENE_FEATURE_SEQ_OVERLAP_ID" name="GENE_FEATURE_SEQ_OVERLAP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneFeatureSeqOverlap/GENE_NA_FEATURE_ID" name="GENE_NA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -5434,7 +5434,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneInstance" name="GeneInstance" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/GeneInstance" name="GeneInstance" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/GeneInstance/GENE_INSTANCE_ID" name="GENE_INSTANCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneInstance/GENE_INSTANCE_CATEGORY_ID" name="GENE_INSTANCE_CATEGORY_ID" nullable="true" length="3" precision="0" type="NUMBER"/>
@@ -5516,7 +5516,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneInstanceCategory" name="GeneInstanceCategory" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/GeneInstanceCategory" name="GeneInstanceCategory" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/GeneInstanceCategory/GENE_INSTANCE_CATEGORY_ID" name="GENE_INSTANCE_CATEGORY_ID" nullable="false" length="3" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneInstanceCategory/NAME" name="NAME" nullable="false" length="40" precision="0" type="STRING"/>
@@ -5537,7 +5537,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneSuperFamily" name="GeneSuperFamily" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/GeneSuperFamily" name="GeneSuperFamily" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/GeneSuperFamily/GENE_SUPER_FAMILY_ID" name="GENE_SUPER_FAMILY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneSuperFamily/NAME" name="NAME" nullable="false" length="40" precision="0" type="STRING"/>
@@ -5558,7 +5558,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneSuperFamilyRelation" name="GeneSuperFamilyRelation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/GeneSuperFamilyRelation" name="GeneSuperFamilyRelation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/GeneSuperFamilyRelation/GENE_SUPERFAMILY_RELATION_ID" name="GENE_SUPERFAMILY_RELATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneSuperFamilyRelation/GENE_SUPER_FAMILY_ID" name="GENE_SUPER_FAMILY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -5608,7 +5608,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneSynonym" name="GeneSynonym" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/GeneSynonym" name="GeneSynonym" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/GeneSynonym/GENE_SYNONYM_ID" name="GENE_SYNONYM_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneSynonym/GENE_ID" name="GENE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -5664,7 +5664,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GeneTrapAssembly" name="GeneTrapAssembly" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Assembly" updatable="true">
+        <table id="DoTS/GeneTrapAssembly" name="GeneTrapAssembly" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Assembly" updatable="true">
           <columns>
             <column id="DoTS/GeneTrapAssembly/GENE_TRAP_ASSEMBLY_ID" name="GENE_TRAP_ASSEMBLY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GeneTrapAssembly/TAG_NA_SEQUENCE_ID" name="TAG_NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -5724,7 +5724,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GOAssociation" name="GOAssociation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GO Association" updatable="true">
+        <table id="DoTS/GOAssociation" name="GOAssociation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GO Association" updatable="true">
           <columns>
             <column id="DoTS/GOAssociation/GO_ASSOCIATION_ID" name="GO_ASSOCIATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GOAssociation/TABLE_ID" name="TABLE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -5813,7 +5813,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GOAssociationInstance" name="GOAssociationInstance" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GO Association" updatable="true">
+        <table id="DoTS/GOAssociationInstance" name="GOAssociationInstance" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GO Association" updatable="true">
           <columns>
             <column id="DoTS/GOAssociationInstance/GO_ASSOCIATION_INSTANCE_ID" name="GO_ASSOCIATION_INSTANCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GOAssociationInstance/GO_ASSOCIATION_ID" name="GO_ASSOCIATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -5922,7 +5922,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GOAssociationInstanceLOE" name="GOAssociationInstanceLOE" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GO Association" updatable="true">
+        <table id="DoTS/GOAssociationInstanceLOE" name="GOAssociationInstanceLOE" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GO Association" updatable="true">
           <columns>
             <column id="DoTS/GOAssociationInstanceLOE/GO_ASSOC_INST_LOE_ID" name="GO_ASSOC_INST_LOE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="DoTS/GOAssociationInstanceLOE/NAME" name="NAME" nullable="false" length="80" precision="0" type="STRING"/>
@@ -5943,7 +5943,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/GOAssocInstEvidCode" name="GOAssocInstEvidCode" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GO Association" updatable="true">
+        <table id="DoTS/GOAssocInstEvidCode" name="GOAssocInstEvidCode" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GO Association" updatable="true">
           <columns>
             <column id="DoTS/GOAssocInstEvidCode/GO_ASSOC_INST_EVID_CODE_ID" name="GO_ASSOC_INST_EVID_CODE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/GOAssocInstEvidCode/GO_EVIDENCE_CODE_ID" name="GO_EVIDENCE_CODE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -6016,7 +6016,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/IndexWord" name="IndexWord" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Text Search" updatable="true">
+        <table id="DoTS/IndexWord" name="IndexWord" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Text Search" updatable="true">
           <columns>
             <column id="DoTS/IndexWord/INDEX_WORD_ID" name="INDEX_WORD_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/IndexWord/WORD" name="WORD" nullable="false" length="255" precision="0" type="STRING"/>
@@ -6042,7 +6042,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/IndexWordLink" name="IndexWordLink" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Text Search" updatable="true">
+        <table id="DoTS/IndexWordLink" name="IndexWordLink" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Text Search" updatable="true">
           <columns>
             <column id="DoTS/IndexWordLink/INDEX_WORD_LINK_ID" name="INDEX_WORD_LINK_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/IndexWordLink/INDEX_WORD_ID" name="INDEX_WORD_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -6099,7 +6099,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/IndexWordSimLink" name="IndexWordSimLink" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/IndexWordSimLink" name="IndexWordSimLink" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/IndexWordSimLink/INDEX_WORD_SIM_LINK_ID" name="INDEX_WORD_SIM_LINK_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/IndexWordSimLink/TARGET_TABLE_ID" name="TARGET_TABLE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -6181,7 +6181,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Interaction" name="Interaction" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/Interaction" name="Interaction" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/Interaction/INTERACTION_ID" name="INTERACTION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Interaction/INTERACTION_TYPE_ID" name="INTERACTION_TYPE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -6293,7 +6293,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/InteractionInteractionLOE" name="InteractionInteractionLOE" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/InteractionInteractionLOE" name="InteractionInteractionLOE" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/InteractionInteractionLOE/INTERACTION_INTERACTION_LOE_ID" name="INTERACTION_INTERACTION_LOE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/InteractionInteractionLOE/INTERACTION_ID" name="INTERACTION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -6342,7 +6342,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/InteractionLOE" name="InteractionLOE" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/InteractionLOE" name="InteractionLOE" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/InteractionLOE/INTERACTION_LOE_ID" name="INTERACTION_LOE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/InteractionLOE/NAME" name="NAME" nullable="false" length="80" precision="0" type="STRING"/>
@@ -6363,7 +6363,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/InteractionType" name="InteractionType" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/InteractionType" name="InteractionType" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/InteractionType/INTERACTION_TYPE_ID" name="INTERACTION_TYPE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="DoTS/InteractionType/NAME" name="NAME" nullable="false" length="80" precision="0" type="STRING"/>
@@ -6400,7 +6400,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/IsExpressed" name="IsExpressed" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Anatomy Vocabulary" updatable="true">
+        <table id="DoTS/IsExpressed" name="IsExpressed" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Anatomy Vocabulary" updatable="true">
           <columns>
             <column id="DoTS/IsExpressed/IS_EXPRESSED_ID" name="IS_EXPRESSED_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/IsExpressed/ANATOMY_ID" name="ANATOMY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -6453,7 +6453,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Keyword" name="Keyword" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/Keyword" name="Keyword" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/Keyword/KEYWORD_ID" name="KEYWORD_ID" nullable="false" length="6" precision="0" type="NUMBER"/>
             <column id="DoTS/Keyword/KEYWORD" name="KEYWORD" nullable="false" length="80" precision="0" type="STRING"/>
@@ -6489,7 +6489,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Library" name="Library" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Clones" updatable="true">
+        <table id="DoTS/Library" name="Library" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Clones" updatable="true">
           <columns>
             <column id="DoTS/Library/LIBRARY_ID" name="LIBRARY_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="DoTS/Library/TAXON_ID" name="TAXON_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -6567,7 +6567,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/MergeSplit" name="MergeSplit" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Assembly" updatable="true">
+        <table id="DoTS/MergeSplit" name="MergeSplit" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Assembly" updatable="true">
           <columns>
             <column id="DoTS/MergeSplit/MERGE_SPLIT_ID" name="MERGE_SPLIT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/MergeSplit/TABLE_ID" name="TABLE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -6606,7 +6606,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/MicroSatelliteMap" name="MicroSatelliteMap" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/MicroSatelliteMap" name="MicroSatelliteMap" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/MicroSatelliteMap/PLASMOMAP_ID" name="PLASMOMAP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/MicroSatelliteMap/EXTERNAL_DATABASE_RELEASE_ID" name="EXTERNAL_DATABASE_RELEASE_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
@@ -6683,7 +6683,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Motif" name="Motif" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Motifs" updatable="true">
+        <table id="DoTS/Motif" name="Motif" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Motifs" updatable="true">
           <columns>
             <column id="DoTS/Motif/MOTIF_ID" name="MOTIF_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Motif/EXTERNAL_DATABASE_RELEASE_ID" name="EXTERNAL_DATABASE_RELEASE_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
@@ -6743,7 +6743,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/MutualInformationScore" name="MutualInformationScore" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Phylogenetic Profile" updatable="true">
+        <table id="DoTS/MutualInformationScore" name="MutualInformationScore" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Phylogenetic Profile" updatable="true">
           <columns>
             <column id="DoTS/MutualInformationScore/MUTUAL_INFORMATION_SCORE_ID" name="MUTUAL_INFORMATION_SCORE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/MutualInformationScore/PRIMARY_PROFILE_ID" name="PRIMARY_PROFILE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -6795,7 +6795,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAComment" name="NAComment" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NAComment" name="NAComment" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NAComment/NA_COMMENT_ID" name="NA_COMMENT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAComment/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -6830,7 +6830,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAEntry" name="NAEntry" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NAEntry" name="NAEntry" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NAEntry/NA_ENTRY_ID" name="NA_ENTRY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAEntry/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -6883,7 +6883,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAFeatRelationshipType" name="NAFeatRelationshipType" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/NAFeatRelationshipType" name="NAFeatRelationshipType" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/NAFeatRelationshipType/NA_FEAT_RELATIONSHIP_TYPE_ID" name="NA_FEAT_RELATIONSHIP_TYPE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAFeatRelationshipType/NAME" name="NAME" nullable="false" length="255" precision="0" type="STRING"/>
@@ -6904,7 +6904,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAFeature" name="NAFeature" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+        <table id="DoTS/NAFeature" name="NAFeature" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
           <columns>
             <column id="DoTS/NAFeature/NA_FEATURE_ID" name="NA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAFeature/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
@@ -6919,12 +6919,12 @@
             <column id="DoTS/NAFeature/REVIEW_STATUS_ID" name="REVIEW_STATUS_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
           </columns>
           <subclasses>
-            <subclass id="DoTS/NAFeature/AlleleFeature" name="AlleleFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/AlleleFeature" name="AlleleFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/AlleleFeature/DESCRIPTION" name="DESCRIPTION" nullable="true" length="4000" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/BindingSiteFeature" name="BindingSiteFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/BindingSiteFeature" name="BindingSiteFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/BindingSiteFeature/MODEL" name="MODEL" nullable="true" length="4000" precision="0" type="STRING"/>
                 <column id="DoTS/BindingSiteFeature/MODEL_ID" name="MODEL_ID" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -6933,7 +6933,7 @@
                 <column id="DoTS/BindingSiteFeature/SYNDROME" name="SYNDROME" nullable="true" length="4000" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/ChromosomeElementFeature" name="ChromosomeElementFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/ChromosomeElementFeature" name="ChromosomeElementFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/ChromosomeElementFeature/DESCRIPTION" name="DESCRIPTION" nullable="true" length="4000" precision="0" type="STRING"/>
                 <column id="DoTS/ChromosomeElementFeature/LENGTH" name="LENGTH" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -6941,9 +6941,9 @@
                 <column id="DoTS/ChromosomeElementFeature/PERCENT_AT" name="PERCENT_AT" nullable="true" length="126" precision="0" type="FLOAT"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/CollectionNAFeature" name="CollectionNAFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/CollectionNAFeature" name="CollectionNAFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
             </subclass>
-            <subclass id="DoTS/NAFeature/DNARegulatory" name="DNARegulatory" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/DNARegulatory" name="DNARegulatory" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/DNARegulatory/CITATION" name="CITATION" nullable="true" length="4000" precision="0" type="STRING"/>
                 <column id="DoTS/DNARegulatory/EVIDENCE" name="EVIDENCE" nullable="true" length="4000" precision="0" type="STRING"/>
@@ -6958,7 +6958,7 @@
                 <column id="DoTS/DNARegulatory/IS_PARTIAL" name="IS_PARTIAL" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/DNAStructure" name="DNAStructure" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/DNAStructure" name="DNAStructure" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/DNAStructure/CITATION" name="CITATION" nullable="true" length="4000" precision="0" type="STRING"/>
                 <column id="DoTS/DNAStructure/DIRECTION" name="DIRECTION" nullable="true" length="4000" precision="0" type="STRING"/>
@@ -6974,7 +6974,7 @@
                 <column id="DoTS/DNAStructure/IS_PARTIAL" name="IS_PARTIAL" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/ExonFeature" name="ExonFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/ExonFeature" name="ExonFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/ExonFeature/IS_ONE_OF" name="IS_ONE_OF" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/ExonFeature/IS_OPTIONAL" name="IS_OPTIONAL" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -6990,7 +6990,7 @@
                 <column id="DoTS/ExonFeature/SCORE" name="SCORE" nullable="true" length="126" precision="0" type="FLOAT"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/GeneFeature" name="GeneFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/GeneFeature" name="GeneFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/GeneFeature/GENE_TYPE" name="GENE_TYPE" nullable="true" length="40" precision="0" type="STRING"/>
                 <column id="DoTS/GeneFeature/CONFIRMED_BY_SIMILARITY" name="CONFIRMED_BY_SIMILARITY" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -7015,12 +7015,12 @@
                 <column id="DoTS/GeneFeature/USEDIN" name="USEDIN" nullable="true" length="40" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/HexamerFeature" name="HexamerFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/HexamerFeature" name="HexamerFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/HexamerFeature/SCORE" name="SCORE" nullable="true" length="126" precision="0" type="FLOAT"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/Immunoglobulin" name="Immunoglobulin" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/Immunoglobulin" name="Immunoglobulin" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/Immunoglobulin/CITATION" name="CITATION" nullable="true" length="200" precision="0" type="STRING"/>
                 <column id="DoTS/Immunoglobulin/CODON" name="CODON" nullable="true" length="40" precision="0" type="STRING"/>
@@ -7041,23 +7041,23 @@
                 <column id="DoTS/Immunoglobulin/IS_PSEUDO" name="IS_PSEUDO" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/InflectionPointFeature" name="InflectionPointFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/InflectionPointFeature" name="InflectionPointFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/InflectionPointFeature/DESCRIPTION" name="DESCRIPTION" nullable="true" length="4000" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/IntronFeature" name="IntronFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/IntronFeature" name="IntronFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/IntronFeature/IS_ONE_OF" name="IS_ONE_OF" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/IntronFeature/ORDER_NUMBER" name="ORDER_NUMBER" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/LowComplexityNAFeature" name="LowComplexityNAFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/LowComplexityNAFeature" name="LowComplexityNAFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/LowComplexityNAFeature/LENGTH" name="LENGTH" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/Miscellaneous" name="Miscellaneous" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/Miscellaneous" name="Miscellaneous" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/Miscellaneous/BOUND_MOIETY" name="BOUND_MOIETY" nullable="true" length="80" precision="0" type="STRING"/>
                 <column id="DoTS/Miscellaneous/CITATION" name="CITATION" nullable="true" length="4000" precision="0" type="STRING"/>
@@ -7078,17 +7078,17 @@
                 <column id="DoTS/Miscellaneous/NUM" name="NUM" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/PolyAFeature" name="PolyAFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/PolyAFeature" name="PolyAFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/PolyAFeature/SCORE" name="SCORE" nullable="true" length="126" precision="0" type="FLOAT"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/PromoterFeature" name="PromoterFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/PromoterFeature" name="PromoterFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/PromoterFeature/SCORE" name="SCORE" nullable="true" length="126" precision="0" type="FLOAT"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/ProteinFeature" name="ProteinFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/ProteinFeature" name="ProteinFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/ProteinFeature/CITATION" name="CITATION" nullable="true" length="4000" precision="0" type="STRING"/>
                 <column id="DoTS/ProteinFeature/CLONE" name="CLONE" nullable="true" length="400" precision="0" type="STRING"/>
@@ -7108,7 +7108,7 @@
                 <column id="DoTS/ProteinFeature/IS_PARTIAL" name="IS_PARTIAL" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/Repeats" name="Repeats" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/Repeats" name="Repeats" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/Repeats/CITATION" name="CITATION" nullable="true" length="400" precision="0" type="STRING"/>
                 <column id="DoTS/Repeats/EVIDENCE" name="EVIDENCE" nullable="true" length="400" precision="0" type="STRING"/>
@@ -7125,36 +7125,36 @@
                 <column id="DoTS/Repeats/IS_PARTIAL" name="IS_PARTIAL" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/ReplicationOriginFeature" name="ReplicationOriginFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/ReplicationOriginFeature" name="ReplicationOriginFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/ReplicationOriginFeature/DESCRIPTION" name="DESCRIPTION" nullable="true" length="4000" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/RestrictionFragmentFeature" name="RestrictionFragmentFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/RestrictionFragmentFeature" name="RestrictionFragmentFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/RestrictionFragmentFeature/ENZYME_NAME" name="ENZYME_NAME" nullable="true" length="100" precision="0" type="STRING"/>
                 <column id="DoTS/RestrictionFragmentFeature/TYPE_OF_CUT" name="TYPE_OF_CUT" nullable="true" length="4000" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/RNAFeature" name="RNAFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/RNAFeature" name="RNAFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/RNAFeature/NUMBER_OF_EXONS" name="NUMBER_OF_EXONS" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/RNAFeature/TRANSLATION_START" name="TRANSLATION_START" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/RNAFeature/TRANSLATION_STOP" name="TRANSLATION_STOP" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/RNARegulatoryFeature" name="RNARegulatoryFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/RNARegulatoryFeature" name="RNARegulatoryFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/RNARegulatoryFeature/SCORE" name="SCORE" nullable="true" length="126" precision="0" type="FLOAT"/>
                 <column id="DoTS/RNARegulatoryFeature/FUNCTION" name="FUNCTION" nullable="true" length="100" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/RNASecondaryStructure" name="RNASecondaryStructure" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+            <subclass id="DoTS/NAFeature/RNASecondaryStructure" name="RNASecondaryStructure" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
               <columns>
                 <column id="DoTS/RNASecondaryStructure/SCORE" name="SCORE" nullable="true" length="126" precision="0" type="FLOAT"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/RNAStructure" name="RNAStructure" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/RNAStructure" name="RNAStructure" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/RNAStructure/CITATION" name="CITATION" nullable="true" length="4000" precision="0" type="STRING"/>
                 <column id="DoTS/RNAStructure/EVIDENCE" name="EVIDENCE" nullable="true" length="400" precision="0" type="STRING"/>
@@ -7169,7 +7169,7 @@
                 <column id="DoTS/RNAStructure/IS_PARTIAL" name="IS_PARTIAL" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/RNAType" name="RNAType" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/RNAType" name="RNAType" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/RNAType/ANTICODON" name="ANTICODON" nullable="true" length="40" precision="0" type="STRING"/>
                 <column id="DoTS/RNAType/CITATION" name="CITATION" nullable="true" length="100" precision="0" type="STRING"/>
@@ -7188,7 +7188,7 @@
                 <column id="DoTS/RNAType/IS_PSEUDO" name="IS_PSEUDO" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/SAGETagFeature" name="SAGETagFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/SAGETagFeature" name="SAGETagFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/SAGETagFeature/RESTRICTION_ENZYME" name="RESTRICTION_ENZYME" nullable="true" length="80" precision="0" type="STRING"/>
                 <column id="DoTS/SAGETagFeature/BINDING_LOCATION_ID" name="BINDING_LOCATION_ID" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -7196,7 +7196,7 @@
                 <column id="DoTS/SAGETagFeature/TAG_LOCATION_ID" name="TAG_LOCATION_ID" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/ScaffoldGapFeature" name="ScaffoldGapFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/ScaffoldGapFeature" name="ScaffoldGapFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/ScaffoldGapFeature/MIN_SIZE" name="MIN_SIZE" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/ScaffoldGapFeature/MAX_SIZE" name="MAX_SIZE" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -7204,7 +7204,7 @@
                 <column id="DoTS/ScaffoldGapFeature/RIGHT_CONTIG" name="RIGHT_CONTIG" nullable="true" length="100" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/Source" name="Source" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/Source" name="Source" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/Source/CELL_LINE" name="CELL_LINE" nullable="true" length="100" precision="0" type="STRING"/>
                 <column id="DoTS/Source/CELL_TYPE" name="CELL_TYPE" nullable="true" length="400" precision="0" type="STRING"/>
@@ -7251,12 +7251,12 @@
                 <column id="DoTS/Source/LABEL" name="LABEL" nullable="true" length="400" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/SpliceSiteFeature" name="SpliceSiteFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/SpliceSiteFeature" name="SpliceSiteFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/SpliceSiteFeature/SCORE" name="SCORE" nullable="true" length="126" precision="0" type="FLOAT"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/STS" name="STS" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/STS" name="STS" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/STS/CITATION" name="CITATION" nullable="true" length="4000" precision="0" type="STRING"/>
                 <column id="DoTS/STS/EVIDENCE" name="EVIDENCE" nullable="true" length="4000" precision="0" type="STRING"/>
@@ -7269,7 +7269,7 @@
                 <column id="DoTS/STS/IS_PARTIAL" name="IS_PARTIAL" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/TandemRepeatFeature" name="TandemRepeatFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/TandemRepeatFeature" name="TandemRepeatFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/TandemRepeatFeature/PERIOD" name="PERIOD" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/TandemRepeatFeature/COPYNUM" name="COPYNUM" nullable="true" length="126" precision="0" type="FLOAT"/>
@@ -7285,7 +7285,7 @@
                 <column id="DoTS/TandemRepeatFeature/CONSENSUS" name="CONSENSUS" nullable="true" length="4000" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/Transcript" name="Transcript" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/Transcript" name="Transcript" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/Transcript/CITATION" name="CITATION" nullable="true" length="4000" precision="0" type="STRING"/>
                 <column id="DoTS/Transcript/CLONE" name="CLONE" nullable="true" length="4000" precision="0" type="STRING"/>
@@ -7313,11 +7313,11 @@
                 <column id="DoTS/Transcript/ANTICODON" name="ANTICODON" nullable="true" length="40" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/TransposableElement" name="TransposableElement" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/TransposableElement" name="TransposableElement" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
             </subclass>
-            <subclass id="DoTS/NAFeature/UTRFeature" name="UTRFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/UTRFeature" name="UTRFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
             </subclass>
-            <subclass id="DoTS/NAFeature/IsolateFeature" name="IsolateFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/IsolateFeature" name="IsolateFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/IsolateFeature/GENE_TYPE" name="GENE_TYPE" nullable="true" length="40" precision="0" type="STRING"/>
                 <column id="DoTS/IsolateFeature/CONFIRMED_BY_SIMILARITY" name="CONFIRMED_BY_SIMILARITY" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -7343,7 +7343,7 @@
                 <column id="DoTS/IsolateFeature/PRODUCT_ALIAS" name="PRODUCT_ALIAS" nullable="true" length="40" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/IsolateSource" name="IsolateSource" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/IsolateSource" name="IsolateSource" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/IsolateSource/CELL_LINE" name="CELL_LINE" nullable="true" length="40" precision="0" type="STRING"/>
                 <column id="DoTS/IsolateSource/CELL_TYPE" name="CELL_TYPE" nullable="true" length="60" precision="0" type="STRING"/>
@@ -7378,7 +7378,7 @@
                 <column id="DoTS/IsolateSource/IS_REFERENCE" name="IS_REFERENCE" nullable="true" length="1" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/SnpFeature" name="SnpFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/SnpFeature" name="SnpFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/SnpFeature/DESCRIPTION" name="DESCRIPTION" nullable="true" length="80" precision="0" type="STRING"/>
                 <column id="DoTS/SnpFeature/REFERENCE_NA" name="REFERENCE_NA" nullable="true" length="50" precision="0" type="STRING"/>
@@ -7402,7 +7402,7 @@
                 <column id="DoTS/SnpFeature/REFERENCE_AA_FULL" name="REFERENCE_AA_FULL" nullable="true" length="4000" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NAFeature/ArrayElementFeature" name="ArrayElementFeature" versioned="true" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
+            <subclass id="DoTS/NAFeature/ArrayElementFeature" name="ArrayElementFeature" versioned="false" tablespace="USERS" categoryRef="NA Sequence Features" updatable="true">
               <columns>
                 <column id="DoTS/ArrayElementFeature/DESCRIPTION" name="DESCRIPTION" nullable="true" length="200" precision="0" type="STRING"/>
                 <column id="DoTS/ArrayElementFeature/PROBE_SET" name="PROBE_SET" nullable="true" length="80" precision="0" type="STRING"/>
@@ -7549,7 +7549,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAFeatureComment" name="NAFeatureComment" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/NAFeatureComment" name="NAFeatureComment" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/NAFeatureComment/NA_FEATURE_COMMENT_ID" name="NA_FEATURE_COMMENT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAFeatureComment/NA_FEATURE_ID" name="NA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -7585,7 +7585,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAFeatureNAGene" name="NAFeatureNAGene" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NAFeatureNAGene" name="NAFeatureNAGene" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NAFeatureNAGene/NA_FEATURE_NA_GENE_ID" name="NA_FEATURE_NA_GENE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAFeatureNAGene/NA_GENE_ID" name="NA_GENE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -7634,7 +7634,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAFeatureNAProtein" name="NAFeatureNAProtein" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NAFeatureNAProtein" name="NAFeatureNAProtein" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NAFeatureNAProtein/NA_FEATURE_NA_PROTEIN_ID" name="NA_FEATURE_NA_PROTEIN_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAFeatureNAProtein/NA_PROTEIN_ID" name="NA_PROTEIN_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -7683,7 +7683,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAFeatureNAPT" name="NAFeatureNAPT" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NAFeatureNAPT" name="NAFeatureNAPT" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NAFeatureNAPT/NA_FEATURE_NA_PT_ID" name="NA_FEATURE_NA_PT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAFeatureNAPT/NA_PRIMARY_TRANSCRIPT_ID" name="NA_PRIMARY_TRANSCRIPT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -7732,7 +7732,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAFeatureRelationship" name="NAFeatureRelationship" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/NAFeatureRelationship" name="NAFeatureRelationship" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/NAFeatureRelationship/NA_FEATURE_RELATIONSHIP_ID" name="NA_FEATURE_RELATIONSHIP_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAFeatureRelationship/PARENT_NA_FEATURE_ID" name="PARENT_NA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -7797,7 +7797,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAGene" name="NAGene" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NAGene" name="NAGene" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NAGene/NA_GENE_ID" name="NA_GENE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAGene/NAME" name="NAME" nullable="true" length="300" precision="0" type="STRING"/>
@@ -7823,7 +7823,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NALocation" name="NALocation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/NALocation" name="NALocation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/NALocation/NA_LOCATION_ID" name="NA_LOCATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NALocation/NA_FEATURE_ID" name="NA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -7878,7 +7878,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAPrimaryTranscript" name="NAPrimaryTranscript" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NAPrimaryTranscript" name="NAPrimaryTranscript" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NAPrimaryTranscript/NA_PRIMARY_TRANSCRIPT_ID" name="NA_PRIMARY_TRANSCRIPT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAPrimaryTranscript/NA_GENE_ID" name="NA_GENE_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
@@ -7913,7 +7913,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NAProtein" name="NAProtein" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NAProtein" name="NAProtein" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NAProtein/NA_PROTEIN_ID" name="NA_PROTEIN_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NAProtein/NA_PRIMARY_TRANSCRIPT_ID" name="NA_PRIMARY_TRANSCRIPT_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
@@ -7954,7 +7954,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NASeqCytoLocation" name="NASeqCytoLocation" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NASeqCytoLocation" name="NASeqCytoLocation" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NASeqCytoLocation/NA_SEQ_CYTO_LOCATION_ID" name="NA_SEQ_CYTO_LOCATION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NASeqCytoLocation/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -7992,7 +7992,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NASequence" name="NASequence" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
+        <table id="DoTS/NASequence" name="NASequence" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
           <columns>
             <column id="DoTS/NASequence/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NASequence/SEQUENCE_VERSION" name="SEQUENCE_VERSION" nullable="false" length="3" precision="0" type="NUMBER"/>
@@ -8014,7 +8014,7 @@
             <column id="DoTS/NASequence/SOURCE_NA_SEQUENCE_ID" name="SOURCE_NA_SEQUENCE_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
           </columns>
           <subclasses>
-            <subclass id="DoTS/NASequence/Assembly" name="Assembly" versioned="true" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
+            <subclass id="DoTS/NASequence/Assembly" name="Assembly" versioned="false" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
               <columns>
                 <column id="DoTS/Assembly/FULL_LENGTH_CDS" name="FULL_LENGTH_CDS" nullable="true" length="12" precision="0" type="NUMBER"/>
                 <column id="DoTS/Assembly/ASSEMBLY_CONSISTENCY" name="ASSEMBLY_CONSISTENCY" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -8025,7 +8025,7 @@
                 <column id="DoTS/Assembly/QUALITY_VALUES" name="QUALITY_VALUES" nullable="true" length="0" precision="0" type="CLOB"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NASequence/ExternalNASequence" name="ExternalNASequence" versioned="true" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
+            <subclass id="DoTS/NASequence/ExternalNASequence" name="ExternalNASequence" versioned="false" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
               <columns>
                 <column id="DoTS/ExternalNASequence/SECONDARY_IDENTIFIER" name="SECONDARY_IDENTIFIER" nullable="true" length="255" precision="0" type="STRING"/>
                 <column id="DoTS/ExternalNASequence/NAME" name="NAME" nullable="true" length="255" precision="0" type="STRING"/>
@@ -8033,13 +8033,13 @@
                 <column id="DoTS/ExternalNASequence/CHROMOSOME_ORDER_NUM" name="CHROMOSOME_ORDER_NUM" nullable="true" length="12" precision="0" type="NUMBER"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NASequence/SplicedNASequence" name="SplicedNASequence" versioned="true" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
+            <subclass id="DoTS/NASequence/SplicedNASequence" name="SplicedNASequence" versioned="false" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
               <columns>
                 <column id="DoTS/SplicedNASequence/SECONDARY_IDENTIFIER" name="SECONDARY_IDENTIFIER" nullable="true" length="255" precision="0" type="STRING"/>
                 <column id="DoTS/SplicedNASequence/NAME" name="NAME" nullable="true" length="255" precision="0" type="STRING"/>
               </columns>
             </subclass>
-            <subclass id="DoTS/NASequence/VirtualSequence" name="VirtualSequence" versioned="true" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
+            <subclass id="DoTS/NASequence/VirtualSequence" name="VirtualSequence" versioned="false" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
               <columns>
                 <column id="DoTS/VirtualSequence/CONFIDENCE" name="CONFIDENCE" nullable="true" length="255" precision="0" type="STRING"/>
                 <column id="DoTS/VirtualSequence/SECONDARY_IDENTIFIER" name="SECONDARY_IDENTIFIER" nullable="true" length="255" precision="0" type="STRING"/>
@@ -8167,7 +8167,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NASequenceKeyword" name="NASequenceKeyword" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NASequenceKeyword" name="NASequenceKeyword" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NASequenceKeyword/NA_SEQUENCE_KEYWORD_ID" name="NA_SEQUENCE_KEYWORD_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NASequenceKeyword/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -8218,7 +8218,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NASequenceOrganelle" name="NASequenceOrganelle" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NASequenceOrganelle" name="NASequenceOrganelle" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NASequenceOrganelle/NA_SEQUENCE_ORGANELLE_ID" name="NA_SEQUENCE_ORGANELLE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NASequenceOrganelle/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -8267,7 +8267,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NASequenceRef" name="NASequenceRef" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/NASequenceRef" name="NASequenceRef" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/NASequenceRef/NA_SEQUENCE_REF_ID" name="NA_SEQUENCE_REF_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NASequenceRef/NA_SEQUENCE_ID" name="NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -8316,7 +8316,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/NRDBEntry" name="NRDBEntry" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
+        <table id="DoTS/NRDBEntry" name="NRDBEntry" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
           <columns>
             <column id="DoTS/NRDBEntry/NRDB_ENTRY_ID" name="NRDB_ENTRY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/NRDBEntry/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -8396,7 +8396,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/OpticalMap" name="OpticalMap" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/OpticalMap" name="OpticalMap" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/OpticalMap/OPTICAL_MAP_ID" name="OPTICAL_MAP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/OpticalMap/EXTERNAL_DATABASE_RELEASE_ID" name="EXTERNAL_DATABASE_RELEASE_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
@@ -8450,7 +8450,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/OpticalMapAlignment" name="OpticalMapAlignment" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/OpticalMapAlignment" name="OpticalMapAlignment" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/OpticalMapAlignment/OPTICAL_MAP_ALIGNMENT_ID" name="OPTICAL_MAP_ALIGNMENT_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/OpticalMapAlignment/OPTICAL_MAP_ID" name="OPTICAL_MAP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
@@ -8503,7 +8503,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/OpticalMapAlignmentSpan" name="OpticalMapAlignmentSpan" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/OpticalMapAlignmentSpan" name="OpticalMapAlignmentSpan" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/OpticalMapAlignmentSpan/OPTICAL_MAP_ALIGNMENT_SPAN_ID" name="OPTICAL_MAP_ALIGNMENT_SPAN_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/OpticalMapAlignmentSpan/OPTICAL_MAP_ALIGNMENT_ID" name="OPTICAL_MAP_ALIGNMENT_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
@@ -8572,7 +8572,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/OpticalMapFragment" name="OpticalMapFragment" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/OpticalMapFragment" name="OpticalMapFragment" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/OpticalMapFragment/OPTICAL_MAP_FRAGMENT_ID" name="OPTICAL_MAP_FRAGMENT_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/OpticalMapFragment/OPTICAL_MAP_ID" name="OPTICAL_MAP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
@@ -8609,7 +8609,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Organelle" name="Organelle" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/Organelle" name="Organelle" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/Organelle/ORGANELLE_ID" name="ORGANELLE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Organelle/NAME" name="NAME" nullable="true" length="300" precision="0" type="STRING"/>
@@ -8630,7 +8630,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Pathway" name="Pathway" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/Pathway" name="Pathway" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/Pathway/PATHWAY_ID" name="PATHWAY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Pathway/NAME" name="NAME" nullable="false" length="80" precision="0" type="STRING"/>
@@ -8667,7 +8667,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/PathwayInteraction" name="PathwayInteraction" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/PathwayInteraction" name="PathwayInteraction" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/PathwayInteraction/PATHWAY_INTERACTION_ID" name="PATHWAY_INTERACTION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/PathwayInteraction/PATHWAY_ID" name="PATHWAY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -8716,7 +8716,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/PfamEntry" name="PfamEntry" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
+        <table id="DoTS/PfamEntry" name="PfamEntry" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="AA Sequence" updatable="true">
           <columns>
             <column id="DoTS/PfamEntry/PFAM_ENTRY_ID" name="PFAM_ENTRY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/PfamEntry/RELEASE" name="RELEASE" nullable="false" length="5" precision="0" type="STRING"/>
@@ -8761,7 +8761,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/PhylogeneticProfile" name="PhylogeneticProfile" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Phylogenetic Profile" updatable="true">
+        <table id="DoTS/PhylogeneticProfile" name="PhylogeneticProfile" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Phylogenetic Profile" updatable="true">
           <columns>
             <column id="DoTS/PhylogeneticProfile/PHYLOGENETIC_PROFILE_ID" name="PHYLOGENETIC_PROFILE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/PhylogeneticProfile/NA_FEATURE_ID" name="NA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -8813,7 +8813,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/PhylogeneticProfileMember" name="PhylogeneticProfileMember" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Phylogenetic Profile" updatable="true">
+        <table id="DoTS/PhylogeneticProfileMember" name="PhylogeneticProfileMember" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Phylogenetic Profile" updatable="true">
           <columns>
             <column id="DoTS/PhylogeneticProfileMember/PHYLOGENETIC_PROFILE_MEMBER_ID" name="PHYLOGENETIC_PROFILE_MEMBER_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/PhylogeneticProfileMember/PHYLOGENETIC_PROFILE_ID" name="PHYLOGENETIC_PROFILE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -8859,7 +8859,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/PhylogeneticProfileSet" name="PhylogeneticProfileSet" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Phylogenetic Profile" updatable="true">
+        <table id="DoTS/PhylogeneticProfileSet" name="PhylogeneticProfileSet" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Phylogenetic Profile" updatable="true">
           <columns>
             <column id="DoTS/PhylogeneticProfileSet/PHYLOGENETIC_PROFILE_SET_ID" name="PHYLOGENETIC_PROFILE_SET_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/PhylogeneticProfileSet/DESCRIPTION" name="DESCRIPTION" nullable="true" length="255" precision="0" type="STRING"/>
@@ -8895,7 +8895,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ProjectLink" name="ProjectLink" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Administration" updatable="true">
+        <table id="DoTS/ProjectLink" name="ProjectLink" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Administration" updatable="true">
           <columns>
             <column id="DoTS/ProjectLink/PROJECT_LINK_ID" name="PROJECT_LINK_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/ProjectLink/PROJECT_ID" name="PROJECT_ID" nullable="false" length="4" precision="0" type="NUMBER"/>
@@ -8953,7 +8953,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Protein" name="Protein" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/Protein" name="Protein" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/Protein/PROTEIN_ID" name="PROTEIN_ID" nullable="false" length="18" precision="0" type="NUMBER"/>
             <column id="DoTS/Protein/NAME" name="NAME" nullable="true" length="255" precision="0" type="STRING"/>
@@ -9022,7 +9022,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ProteinCategory" name="ProteinCategory" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/ProteinCategory" name="ProteinCategory" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/ProteinCategory/PROTEIN_CATEGORY_ID" name="PROTEIN_CATEGORY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/ProteinCategory/TERM" name="TERM" nullable="false" length="80" precision="0" type="STRING"/>
@@ -9043,7 +9043,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ProteinInstance" name="ProteinInstance" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/ProteinInstance" name="ProteinInstance" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/ProteinInstance/PROTEIN_INSTANCE_ID" name="PROTEIN_INSTANCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/ProteinInstance/PROTEIN_INSTANCE_CATEGORY_ID" name="PROTEIN_INSTANCE_CATEGORY_ID" nullable="true" length="3" precision="0" type="NUMBER"/>
@@ -9131,7 +9131,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ProteinInstanceCategory" name="ProteinInstanceCategory" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/ProteinInstanceCategory" name="ProteinInstanceCategory" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/ProteinInstanceCategory/PROTEIN_INSTANCE_CATEGORY_ID" name="PROTEIN_INSTANCE_CATEGORY_ID" nullable="false" length="3" precision="0" type="NUMBER"/>
             <column id="DoTS/ProteinInstanceCategory/NAME" name="NAME" nullable="false" length="40" precision="0" type="STRING"/>
@@ -9152,7 +9152,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ProteinProperty" name="ProteinProperty" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/ProteinProperty" name="ProteinProperty" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/ProteinProperty/PROTEIN_PROPERTY_ID" name="PROTEIN_PROPERTY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/ProteinProperty/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -9250,7 +9250,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ProteinPropertyType" name="ProteinPropertyType" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/ProteinPropertyType" name="ProteinPropertyType" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/ProteinPropertyType/PROTEIN_PROPERTY_TYPE_ID" name="PROTEIN_PROPERTY_TYPE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/ProteinPropertyType/NAME" name="NAME" nullable="false" length="80" precision="0" type="STRING"/>
@@ -9271,7 +9271,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ProteinProteinCategory" name="ProteinProteinCategory" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/ProteinProteinCategory" name="ProteinProteinCategory" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/ProteinProteinCategory/PROTEIN_PROTEIN_CATEGORY_ID" name="PROTEIN_PROTEIN_CATEGORY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/ProteinProteinCategory/PROTEIN_ID" name="PROTEIN_ID" nullable="false" length="18" precision="0" type="NUMBER"/>
@@ -9320,7 +9320,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/ProteinSynonym" name="ProteinSynonym" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/ProteinSynonym" name="ProteinSynonym" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/ProteinSynonym/PROTEIN_SYNONYM_ID" name="PROTEIN_SYNONYM_ID" nullable="false" length="18" precision="0" type="NUMBER"/>
             <column id="DoTS/ProteinSynonym/PROTEIN_ID" name="PROTEIN_ID" nullable="false" length="18" precision="0" type="NUMBER"/>
@@ -9444,7 +9444,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RepeatType" name="RepeatType" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Repeat Types Vocabulary" updatable="true">
+        <table id="DoTS/RepeatType" name="RepeatType" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Repeat Types Vocabulary" updatable="true">
           <columns>
             <column id="DoTS/RepeatType/REPEAT_TYPE_ID" name="REPEAT_TYPE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/RepeatType/PARENT_ID" name="PARENT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -9512,7 +9512,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RHMap" name="RHMap" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/RHMap" name="RHMap" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/RHMap/RH_MAP_ID" name="RH_MAP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/RHMap/NAME" name="NAME" nullable="false" length="100" precision="0" type="STRING"/>
@@ -9565,7 +9565,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RHMapMarker" name="RHMapMarker" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/RHMapMarker" name="RHMapMarker" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/RHMapMarker/RH_MAP_MARKER_ID" name="RH_MAP_MARKER_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/RHMapMarker/RH_MARKER_ID" name="RH_MARKER_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
@@ -9630,7 +9630,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RHMarker" name="RHMarker" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Mapping" updatable="true">
+        <table id="DoTS/RHMarker" name="RHMarker" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Mapping" updatable="true">
           <columns>
             <column id="DoTS/RHMarker/RH_MARKER_ID" name="RH_MARKER_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="DoTS/RHMarker/EXTERNAL_DATABASE_RELEASE_ID" name="EXTERNAL_DATABASE_RELEASE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -9689,7 +9689,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RNA" name="RNA" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/RNA" name="RNA" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/RNA/RNA_ID" name="RNA_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/RNA/DESCRIPTION" name="DESCRIPTION" nullable="true" length="500" precision="0" type="STRING"/>
@@ -9756,7 +9756,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RNAAnatomy" name="RNAAnatomy" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/RNAAnatomy" name="RNAAnatomy" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/RNAAnatomy/RNA_ANATOMY_ID" name="RNA_ANATOMY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/RNAAnatomy/ANATOMY_ID" name="ANATOMY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -9808,7 +9808,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RNAAnatomyLOE" name="RNAAnatomyLOE" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/RNAAnatomyLOE" name="RNAAnatomyLOE" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/RNAAnatomyLOE/RNA_ANATOMY_LOE_ID" name="RNA_ANATOMY_LOE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/RNAAnatomyLOE/RNA_ANATOMY_ID" name="RNA_ANATOMY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -9857,7 +9857,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RNACategory" name="RNACategory" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/RNACategory" name="RNACategory" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/RNACategory/RNA_CATEGORY_ID" name="RNA_CATEGORY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/RNACategory/TERM" name="TERM" nullable="false" length="80" precision="0" type="STRING"/>
@@ -9878,7 +9878,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/AAFeatureExon" name="AAFeatureExon" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/AAFeatureExon" name="AAFeatureExon" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/AAFeatureExon/AA_FEATURE_EXON_ID" name="AA_FEATURE_EXON_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/AAFeatureExon/AA_FEATURE_ID" name="AA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -9935,7 +9935,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RNAFeatureExon" name="RNAFeatureExon" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
+        <table id="DoTS/RNAFeatureExon" name="RNAFeatureExon" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Feature Relations" updatable="true">
           <columns>
             <column id="DoTS/RNAFeatureExon/RNA_FEATURE_EXON_ID" name="RNA_FEATURE_EXON_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/RNAFeatureExon/RNA_FEATURE_ID" name="RNA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -9991,7 +9991,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RNAIConstruct" name="RNAIConstruct" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/RNAIConstruct" name="RNAIConstruct" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/RNAIConstruct/RNAI_CONSTRUCT_ID" name="RNAI_CONSTRUCT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/RNAIConstruct/RNA_ID" name="RNA_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -10042,7 +10042,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RNAInstance" name="RNAInstance" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/RNAInstance" name="RNAInstance" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/RNAInstance/RNA_INSTANCE_ID" name="RNA_INSTANCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/RNAInstance/RNA_ID" name="RNA_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -10123,7 +10123,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RNAInstanceCategory" name="RNAInstanceCategory" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/RNAInstanceCategory" name="RNAInstanceCategory" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/RNAInstanceCategory/RNA_INSTANCE_CATEGORY_ID" name="RNA_INSTANCE_CATEGORY_ID" nullable="false" length="3" precision="0" type="NUMBER"/>
             <column id="DoTS/RNAInstanceCategory/NAME" name="NAME" nullable="false" length="255" precision="0" type="STRING"/>
@@ -10144,7 +10144,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RNAIPhenotype" name="RNAIPhenotype" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/RNAIPhenotype" name="RNAIPhenotype" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/RNAIPhenotype/RNAI_PHENOTYPE_ID" name="RNAI_PHENOTYPE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/RNAIPhenotype/RNAI_CONSTRUCT_ID" name="RNAI_CONSTRUCT_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -10208,7 +10208,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RNARNACategory" name="RNARNACategory" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
+        <table id="DoTS/RNARNACategory" name="RNARNACategory" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Central Dogma" updatable="true">
           <columns>
             <column id="DoTS/RNARNACategory/RNA_RNA_CATEGORY_ID" name="RNA_RNA_CATEGORY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/RNARNACategory/RNA_ID" name="RNA_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -10257,7 +10257,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RowSet" name="RowSet" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/RowSet" name="RowSet" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/RowSet/ROW_SET_ID" name="ROW_SET_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
           </columns>
@@ -10276,7 +10276,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/RowSetMember" name="RowSetMember" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Interaction" updatable="true">
+        <table id="DoTS/RowSetMember" name="RowSetMember" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Interaction" updatable="true">
           <columns>
             <column id="DoTS/RowSetMember/ROW_SET_MEMBER_ID" name="ROW_SET_MEMBER_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/RowSetMember/ROW_SET_ID" name="ROW_SET_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -10326,7 +10326,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SecondaryAccs" name="SecondaryAccs" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
+        <table id="DoTS/SecondaryAccs" name="SecondaryAccs" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="GenBank Sequence Record" updatable="true">
           <columns>
             <column id="DoTS/SecondaryAccs/SECONDARY_ACCS_ID" name="SECONDARY_ACCS_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/SecondaryAccs/EXTERNAL_DATABASE_RELEASE_ID" name="EXTERNAL_DATABASE_RELEASE_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
@@ -10402,7 +10402,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SecondaryStructure" name="SecondaryStructure" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/SecondaryStructure" name="SecondaryStructure" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/SecondaryStructure/SECONDARY_STRUCTURE_ID" name="SECONDARY_STRUCTURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/SecondaryStructure/AA_SEQUENCE_ID" name="AA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -10453,7 +10453,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SecondaryStructureCall" name="SecondaryStructureCall" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="null" updatable="true">
+        <table id="DoTS/SecondaryStructureCall" name="SecondaryStructureCall" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="null" updatable="true">
           <columns>
             <column id="DoTS/SecondaryStructureCall/SECONDARY_STRUCTURE_CALL_ID" name="SECONDARY_STRUCTURE_CALL_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/SecondaryStructureCall/SECONDARY_STRUCTURE_ID" name="SECONDARY_STRUCTURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -10491,7 +10491,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SeqGroupExperiment" name="SeqGroupExperiment" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+        <table id="DoTS/SeqGroupExperiment" name="SeqGroupExperiment" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
           <columns>
             <column id="DoTS/SeqGroupExperiment/SEQ_GROUP_EXPERIMENT_ID" name="SEQ_GROUP_EXPERIMENT_ID" nullable="false" length="0" precision="0" type="NUMBER"/>
             <column id="DoTS/SeqGroupExperiment/SUBCLASS_VIEW" name="SUBCLASS_VIEW" nullable="false" length="30" precision="0" type="STRING"/>
@@ -10503,11 +10503,11 @@
             <column id="DoTS/SeqGroupExperiment/PERCENT_MATCH" name="PERCENT_MATCH" nullable="true" length="126" precision="0" type="FLOAT"/>
           </columns>
           <subclasses>
-            <subclass id="DoTS/SeqGroupExperiment/InParalogExperiment" name="InParalogExperiment" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+            <subclass id="DoTS/SeqGroupExperiment/InParalogExperiment" name="InParalogExperiment" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
             </subclass>
-            <subclass id="DoTS/SeqGroupExperiment/OrthologExperiment" name="OrthologExperiment" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+            <subclass id="DoTS/SeqGroupExperiment/OrthologExperiment" name="OrthologExperiment" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
             </subclass>
-            <subclass id="DoTS/SeqGroupExperiment/OutParalogExperiment" name="OutParalogExperiment" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+            <subclass id="DoTS/SeqGroupExperiment/OutParalogExperiment" name="OutParalogExperiment" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
             </subclass>
           </subclasses>
           <indexes>
@@ -10525,7 +10525,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SequenceFamily" name="SequenceFamily" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+        <table id="DoTS/SequenceFamily" name="SequenceFamily" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
           <columns>
             <column id="DoTS/SequenceFamily/SEQUENCE_FAMILY_ID" name="SEQUENCE_FAMILY_ID" nullable="false" length="0" precision="0" type="NUMBER"/>
             <column id="DoTS/SequenceFamily/NAME" name="NAME" nullable="false" length="500" precision="0" type="STRING"/>
@@ -10561,7 +10561,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SequenceFamilyExperiment" name="SequenceFamilyExperiment" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+        <table id="DoTS/SequenceFamilyExperiment" name="SequenceFamilyExperiment" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
           <columns>
             <column id="DoTS/SequenceFamilyExperiment/SEQUENCE_FAMILY_EXPERIMENT_ID" name="SEQUENCE_FAMILY_EXPERIMENT_ID" nullable="false" length="0" precision="0" type="NUMBER"/>
             <column id="DoTS/SequenceFamilyExperiment/DESCRIPTION" name="DESCRIPTION" nullable="true" length="2000" precision="0" type="STRING"/>
@@ -10626,7 +10626,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SequenceGroup" name="SequenceGroup" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+        <table id="DoTS/SequenceGroup" name="SequenceGroup" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
           <columns>
             <column id="DoTS/SequenceGroup/SEQUENCE_GROUP_ID" name="SEQUENCE_GROUP_ID" nullable="false" length="0" precision="0" type="NUMBER"/>
             <column id="DoTS/SequenceGroup/SUBCLASS_VIEW" name="SUBCLASS_VIEW" nullable="false" length="100" precision="0" type="STRING"/>
@@ -10647,11 +10647,11 @@
             <column id="DoTS/SequenceGroup/SEQUENCE_GROUP_EXPERIMENT_ID" name="SEQUENCE_GROUP_EXPERIMENT_ID" nullable="true" length="0" precision="0" type="NUMBER"/>
           </columns>
           <subclasses>
-            <subclass id="DoTS/SequenceGroup/InParalogGroup" name="InParalogGroup" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+            <subclass id="DoTS/SequenceGroup/InParalogGroup" name="InParalogGroup" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
             </subclass>
-            <subclass id="DoTS/SequenceGroup/OrthologGroup" name="OrthologGroup" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+            <subclass id="DoTS/SequenceGroup/OrthologGroup" name="OrthologGroup" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
             </subclass>
-            <subclass id="DoTS/SequenceGroup/OutParalogGroup" name="OutParalogGroup" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+            <subclass id="DoTS/SequenceGroup/OutParalogGroup" name="OutParalogGroup" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
             </subclass>
           </subclasses>
           <indexes>
@@ -10684,7 +10684,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SequenceGroupFamily" name="SequenceGroupFamily" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+        <table id="DoTS/SequenceGroupFamily" name="SequenceGroupFamily" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
           <columns>
             <column id="DoTS/SequenceGroupFamily/SEQUENCE_GROUP_FAMILY_ID" name="SEQUENCE_GROUP_FAMILY_ID" nullable="false" length="0" precision="0" type="NUMBER"/>
             <column id="DoTS/SequenceGroupFamily/SEQUENCE_FAMILY_ID" name="SEQUENCE_FAMILY_ID" nullable="true" length="0" precision="0" type="NUMBER"/>
@@ -10733,7 +10733,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SequencePiece" name="SequencePiece" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
+        <table id="DoTS/SequencePiece" name="SequencePiece" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="NA Sequence" updatable="true">
           <columns>
             <column id="DoTS/SequencePiece/SEQUENCE_PIECE_ID" name="SEQUENCE_PIECE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/SequencePiece/VIRTUAL_NA_SEQUENCE_ID" name="VIRTUAL_NA_SEQUENCE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -10788,7 +10788,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SequenceSequenceGroup" name="SequenceSequenceGroup" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
+        <table id="DoTS/SequenceSequenceGroup" name="SequenceSequenceGroup" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Paralog and Family" updatable="true">
           <columns>
             <column id="DoTS/SequenceSequenceGroup/SEQUENCE_SEQUENCE_GROUP_ID" name="SEQUENCE_SEQUENCE_GROUP_ID" nullable="false" length="0" precision="0" type="NUMBER"/>
             <column id="DoTS/SequenceSequenceGroup/SEQUENCE_ID" name="SEQUENCE_ID" nullable="false" length="0" precision="0" type="NUMBER"/>
@@ -10849,7 +10849,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SequenceType" name="SequenceType" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Sequence Types Vocabulary" updatable="true">
+        <table id="DoTS/SequenceType" name="SequenceType" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Sequence Types Vocabulary" updatable="true">
           <columns>
             <column id="DoTS/SequenceType/SEQUENCE_TYPE_ID" name="SEQUENCE_TYPE_ID" nullable="false" length="4" precision="0" type="NUMBER"/>
             <column id="DoTS/SequenceType/NUCLEOTIDE_TYPE" name="NUCLEOTIDE_TYPE" nullable="false" length="7" precision="0" type="CHARACTER"/>
@@ -10889,7 +10889,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/Similarity" name="Similarity" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Similarity" updatable="true">
+        <table id="DoTS/Similarity" name="Similarity" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Similarity" updatable="true">
           <columns>
             <column id="DoTS/Similarity/SIMILARITY_ID" name="SIMILARITY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/Similarity/SUBJECT_TABLE_ID" name="SUBJECT_TABLE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
@@ -11000,7 +11000,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/SimilaritySpan" name="SimilaritySpan" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Similarity" updatable="true">
+        <table id="DoTS/SimilaritySpan" name="SimilaritySpan" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Similarity" updatable="true">
           <columns>
             <column id="DoTS/SimilaritySpan/SIMILARITY_SPAN_ID" name="SIMILARITY_SPAN_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/SimilaritySpan/SIMILARITY_ID" name="SIMILARITY_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -11047,7 +11047,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="DoTS/TranslatedAAFeatSeg" name="TranslatedAAFeatSeg" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
+        <table id="DoTS/TranslatedAAFeatSeg" name="TranslatedAAFeatSeg" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="AA Sequence Features" updatable="true">
           <columns>
             <column id="DoTS/TranslatedAAFeatSeg/TRANSLATED_AA_FEAT_SEG_ID" name="TRANSLATED_AA_FEAT_SEG_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="DoTS/TranslatedAAFeatSeg/AA_FEATURE_ID" name="AA_FEATURE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -11240,7 +11240,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/DbRef" name="DbRef" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="External Database" updatable="true">
+        <table id="SRes/DbRef" name="DbRef" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="External Database" updatable="true">
           <columns>
             <column id="SRes/DbRef/DB_REF_ID" name="DB_REF_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="SRes/DbRef/EXTERNAL_DATABASE_RELEASE_ID" name="EXTERNAL_DATABASE_RELEASE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -11305,7 +11305,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/EnzymeClass" name="EnzymeClass" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Enzymes Vocabulary" updatable="true">
+        <table id="SRes/EnzymeClass" name="EnzymeClass" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Enzymes Vocabulary" updatable="true">
           <columns>
             <column id="SRes/EnzymeClass/ENZYME_CLASS_ID" name="ENZYME_CLASS_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="SRes/EnzymeClass/DEPTH" name="DEPTH" nullable="false" length="1" precision="0" type="NUMBER"/>
@@ -11375,7 +11375,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/EnzymeClassAttribute" name="EnzymeClassAttribute" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Enzymes Vocabulary" updatable="true">
+        <table id="SRes/EnzymeClassAttribute" name="EnzymeClassAttribute" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Enzymes Vocabulary" updatable="true">
           <columns>
             <column id="SRes/EnzymeClassAttribute/ENZYME_CLASS_ATTRIBUTE_ID" name="ENZYME_CLASS_ATTRIBUTE_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="SRes/EnzymeClassAttribute/ENZYME_CLASS_ID" name="ENZYME_CLASS_ID" nullable="true" length="12" precision="0" type="NUMBER"/>
@@ -11411,7 +11411,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/ExternalDatabase" name="ExternalDatabase" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="External Database" updatable="true">
+        <table id="SRes/ExternalDatabase" name="ExternalDatabase" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="External Database" updatable="true">
           <columns>
             <column id="SRes/ExternalDatabase/EXTERNAL_DATABASE_ID" name="EXTERNAL_DATABASE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="SRes/ExternalDatabase/NAME" name="NAME" nullable="false" length="200" precision="0" type="STRING"/>
@@ -11443,7 +11443,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/ExternalDatabaseRelease" name="ExternalDatabaseRelease" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="External Database" updatable="true">
+        <table id="SRes/ExternalDatabaseRelease" name="ExternalDatabaseRelease" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="External Database" updatable="true">
           <columns>
             <column id="SRes/ExternalDatabaseRelease/EXTERNAL_DATABASE_RELEASE_ID" name="EXTERNAL_DATABASE_RELEASE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="SRes/ExternalDatabaseRelease/EXTERNAL_DATABASE_ID" name="EXTERNAL_DATABASE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -11492,7 +11492,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/GeneticCode" name="GeneticCode" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Genetic Code Vocabulary" updatable="true">
+        <table id="SRes/GeneticCode" name="GeneticCode" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Genetic Code Vocabulary" updatable="true">
           <columns>
             <column id="SRes/GeneticCode/GENETIC_CODE_ID" name="GENETIC_CODE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="SRes/GeneticCode/NCBI_GENETIC_CODE_ID" name="NCBI_GENETIC_CODE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -11516,7 +11516,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/OntologyRelationship" name="OntologyRelationship" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Generic Ontology" updatable="true">
+        <table id="SRes/OntologyRelationship" name="OntologyRelationship" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Generic Ontology" updatable="true">
           <columns>
             <column id="SRes/OntologyRelationship/ONTOLOGY_RELATIONSHIP_ID" name="ONTOLOGY_RELATIONSHIP_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="SRes/OntologyRelationship/SUBJECT_TERM_ID" name="SUBJECT_TERM_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -11649,7 +11649,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/OntologyTerm" name="OntologyTerm" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Generic Ontology" updatable="true">
+        <table id="SRes/OntologyTerm" name="OntologyTerm" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Generic Ontology" updatable="true">
           <columns>
             <column id="SRes/OntologyTerm/ONTOLOGY_TERM_ID" name="ONTOLOGY_TERM_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="SRes/OntologyTerm/ONTOLOGY_TERM_TYPE_ID" name="ONTOLOGY_TERM_TYPE_ID" nullable="true" length="5" precision="0" type="NUMBER"/>
@@ -11779,7 +11779,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/OntologyTermType" name="OntologyTermType" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Generic Ontology" updatable="true">
+        <table id="SRes/OntologyTermType" name="OntologyTermType" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Generic Ontology" updatable="true">
           <columns>
             <column id="SRes/OntologyTermType/ONTOLOGY_TERM_TYPE_ID" name="ONTOLOGY_TERM_TYPE_ID" nullable="false" length="5" precision="0" type="NUMBER"/>
             <column id="SRes/OntologyTermType/NAME" name="NAME" nullable="false" length="50" precision="0" type="STRING"/>
@@ -11800,7 +11800,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/OntologySynonym" name="OntologySynonym" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Generic Ontology" updatable="true">
+        <table id="SRes/OntologySynonym" name="OntologySynonym" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Generic Ontology" updatable="true">
           <columns>
             <column id="SRes/OntologySynonym/ONTOLOGY_SYNONYM_ID" name="ONTOLOGY_SYNONYM_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="SRes/OntologySynonym/ONTOLOGY_TERM_ID" name="ONTOLOGY_TERM_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -11873,7 +11873,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/Taxon" name="Taxon" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Taxon Vocabulary" updatable="true">
+        <table id="SRes/Taxon" name="Taxon" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Taxon Vocabulary" updatable="true">
           <columns>
             <column id="SRes/Taxon/TAXON_ID" name="TAXON_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="SRes/Taxon/NCBI_TAX_ID" name="NCBI_TAX_ID" nullable="true" length="10" precision="0" type="NUMBER"/>
@@ -11954,7 +11954,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/TaxonName" name="TaxonName" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Taxon Vocabulary" updatable="true">
+        <table id="SRes/TaxonName" name="TaxonName" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Taxon Vocabulary" updatable="true">
           <columns>
             <column id="SRes/TaxonName/TAXON_NAME_ID" name="TAXON_NAME_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="SRes/TaxonName/TAXON_ID" name="TAXON_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -12007,7 +12007,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/Pathway" name="Pathway" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Pathway Vocabulary" updatable="true">
+        <table id="SRes/Pathway" name="Pathway" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Pathway Vocabulary" updatable="true">
           <columns>
             <column id="SRes/Pathway/PATHWAY_ID" name="PATHWAY_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="SRes/Pathway/NAME" name="NAME" nullable="false" length="150" precision="0" type="STRING"/>
@@ -12045,7 +12045,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/PathwayNode" name="PathwayNode" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Pathway Vocabulary" updatable="true">
+        <table id="SRes/PathwayNode" name="PathwayNode" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Pathway Vocabulary" updatable="true">
           <columns>
             <column id="SRes/PathwayNode/PATHWAY_NODE_ID" name="PATHWAY_NODE_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="SRes/PathwayNode/DISPLAY_LABEL" name="DISPLAY_LABEL" nullable="false" length="1000" precision="0" type="STRING"/>
@@ -12134,7 +12134,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/PathwayRelationship" name="PathwayRelationship" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Pathway Vocabulary" updatable="true">
+        <table id="SRes/PathwayRelationship" name="PathwayRelationship" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Pathway Vocabulary" updatable="true">
           <columns>
             <column id="SRes/PathwayRelationship/PATHWAY_RELATIONSHIP_ID" name="PATHWAY_RELATIONSHIP_ID" nullable="false" length="12" precision="0" type="NUMBER"/>
             <column id="SRes/PathwayRelationship/RELATIONSHIP_TYPE_ID" name="RELATIONSHIP_TYPE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
@@ -12216,7 +12216,7 @@
             </constraint>
           </constraints>
         </table>
-        <table id="SRes/PhenotypeComposition" name="PhenotypeComposition" housekeeping="true" versioned="true" tablespace="USERS" categoryRef="Phenotype Vocabulary" updatable="true">
+        <table id="SRes/PhenotypeComposition" name="PhenotypeComposition" housekeeping="true" versioned="false" tablespace="USERS" categoryRef="Phenotype Vocabulary" updatable="true">
           <columns>
             <column id="SRes/PhenotypeComposition/PHENOTYPE_COMPOSITION_ID" name="PHENOTYPE_COMPOSITION_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
             <column id="SRes/PhenotypeComposition/PHENOTYPE_ID" name="PHENOTYPE_ID" nullable="false" length="10" precision="0" type="NUMBER"/>
